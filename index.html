@@ -1,60 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hunidas Next Layer</title>
-    <style>
-        body { margin: 0; font-family: Arial, sans-serif; scroll-behavior: smooth; }
-        header { background: #1f2937; color: white; padding: 40px 20px; text-align: center; }
-        nav { background: #111827; color: white; display: flex; justify-content: center; gap: 30px; padding: 15px; position: sticky; top: 0; }
-        nav a { color: white; text-decoration: none; font-weight: bold; }
-        section { padding: 50px 20px; max-width: 1000px; margin: auto; }
-        h2 { color: #1f2937; }
-        footer { background: #1f2937; color: white; text-align: center; padding: 20px; }
-        img.logo { max-width: 150px; margin-bottom: 20px; }
-    </style>
-</head>
-<body>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-950 text-white">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-gray-900 shadow z-50">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Hunidas Next Layer</h1>
+        <nav class="space-x-6">
+          <a href="#sobre" class="hover:text-cyan-400">Sobre</a>
+          <a href="#servicos" class="hover:text-cyan-400">Serviços</a>
+          <a href="#contacto" class="hover:text-cyan-400">Contacto</a>
+        </nav>
+      </div>
+    </header>
 
-<header>
-    <img src="hunidas.png" alt="Hunidas Next Layer Logo" class="logo">
-    <h1>Hunidas Next Layer</h1>
-    <p>Infraestruturas inteligentes, suporte proativo e soluções tecnológicas personalizadas.<br>
-    Um parceiro de confiança para elevar o teu negócio ao próximo nível.</p>
-</header>
+    <!-- Hero -->
+    <section class="h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-center px-4" id="hero">
+      <div>
+        <h2 class="text-4xl md:text-6xl font-extrabold mb-6">Infraestruturas inteligentes, suporte proativo e soluções personalizadas.</h2>
+        <p class="text-xl mb-8">Transformamos tecnologia em soluções eficazes para a sua empresa ou casa.</p>
+        <a href="#contacto" class="bg-cyan-500 hover:bg-cyan-400 text-white px-6 py-3 rounded-full font-medium transition">Peça uma proposta</a>
+      </div>
+    </section>
 
-<nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#servicos">Serviços</a>
-    <a href="#contacto">Contacto</a>
-</nav>
+    <!-- Sobre -->
+    <section class="py-20 px-6 max-w-5xl mx-auto" id="sobre">
+      <h3 class="text-3xl font-bold mb-4 text-cyan-400">Sobre Nós</h3>
+      <p class="text-lg">Na Hunidas Next Layer, oferecemos soluções de TI que combinam eficiência, inovação e suporte dedicado. Com uma abordagem personalizada, garantimos o bom funcionamento das infraestruturas tecnológicas dos nossos clientes.</p>
+    </section>
 
-<section id="sobre">
-    <h2>Sobre Nós</h2>
-    <p>Com foco em infraestruturas fiáveis, monitorização contínua e suporte proativo, ajudamos pequenas e médias empresas a crescer com base numa base tecnológica sólida.</p>
-</section>
+    <!-- Serviços -->
+    <section class="py-20 px-6 bg-gray-900" id="servicos">
+      <h3 class="text-3xl font-bold mb-10 text-center text-cyan-400">Serviços</h3>
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg">
+          <h4 class="text-xl font-semibold mb-2">Outsourcing IT</h4>
+          <p>Profissionais qualificados para dar suporte à sua infraestrutura sem complicações.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg">
+          <h4 class="text-xl font-semibold mb-2">Domótica</h4>
+          <p>Automatização de casas e empresas com tecnologia acessível e fiável.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg">
+          <h4 class="text-xl font-semibold mb-2">Infraestruturas de Rede</h4>
+          <p>Instalação e manutenção de redes informáticas adaptadas às suas necessidades.</p>
+        </div>
+      </div>
+    </section>
 
-<section id="servicos">
-    <h2>Serviços</h2>
-    <ul>
-        <li><strong>Avenças Mensais:</strong> Soluções proativas e adaptadas, que evitam problemas antes que aconteçam e garantem estabilidade contínua ao seu negócio.</li>
-        <li><strong>Contratos de Manutenção:</strong> Gestão total da infraestrutura informática da sua empresa, com foco em segurança, performance e prevenção de falhas.</li>
-        <li><strong>Outsourcing:</strong> Especialistas qualificados, preparados para integrar a sua equipa com competências técnicas atualizadas e custos otimizados.</li>
-        <li><strong>Implementação de Redes e Infraestruturas de Servidores:</strong> Planeamento e execução de sistemas de rede robustos e escaláveis para ambientes empresariais.</li>
-        <li><strong>Domótica – Casa e Empresa Inteligente:</strong> Soluções modernas para automatizar e simplificar a gestão de espaços, aumentando a eficiência e o conforto.</li>
-    </ul>
-</section>
+    <!-- Contacto / CTA -->
+    <section class="py-20 px-6 max-w-5xl mx-auto text-center" id="contacto">
+      <h3 class="text-3xl font-bold mb-6 text-cyan-400">Fale connosco</h3>
+      <p class="mb-6">Pronto para elevar a sua infraestrutura ao próximo nível? Envie-nos uma mensagem.</p>
+      <a href="mailto:corporate@hunidas.pt" class="bg-cyan-500 hover:bg-cyan-400 text-white px-8 py-4 rounded-full font-medium transition">Enviar Email</a>
+    </section>
 
-<section id="contacto">
-    <h2>Contacto</h2>
-    <p>Email: <a href="mailto:corporate@hunidas.pt">corporate@hunidas.pt</a></p>
-</section>
-
-<footer>
-    <p>&copy; 2025 Hunidas Next Layer</p>
-</footer>
-
-</body>
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6 text-center">
+      <p class="text-sm text-gray-400">&copy; 2025 Hunidas Next Layer — Todos os direitos reservados</p>
+      <p class="text-sm text-gray-400">Email: <a href="mailto:corporate@hunidas.pt" class="underline hover:text-cyan-400">corporate@hunidas.pt</a></p>
+    </footer>
+  </body>
 </html>
