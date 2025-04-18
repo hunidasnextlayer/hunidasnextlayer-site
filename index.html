@@ -84,16 +84,35 @@
     </script>
 
     <!-- Hero -->
-    <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-center px-6 pt-64 md:pt-0" id="hero">
-      <div>
-        <h2 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">Infraestruturas inteligentes, suporte proativo e soluções personalizadas.</h2>
-        <p class="text-xl mb-8">Transformamos tecnologia em soluções eficazes para a tua empresa ou casa.</p>
-        <div class="flex flex-wrap justify-center gap-4">
-          <a href="#contacto" class="bg-cyan-500 hover:bg-cyan-400 text-white px-6 py-3 rounded-full font-medium transition">Peça uma proposta</a>
-          <a href="#servicos" class="bg-transparent border border-cyan-500 hover:bg-cyan-500 text-white hover:text-black px-6 py-3 rounded-full font-medium transition">Conhece os serviços</a>
-        </div>
-      </div>
-    </section>
+  <section
+  class="relative min-h-screen flex items-center justify-center text-center px-6 pt-64 md:pt-0"
+  id="hero"
+>
+  <!-- Overlay escuro -->
+  <div class="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
+
+  <!-- Imagem de fundo -->
+  <div
+    class="absolute inset-0 bg-cover bg-center z-[-1]"
+    style="background-image: url('fundo_bk1.jpg');"
+  ></div>
+
+  <!-- Conteúdo -->
+  <div class="relative z-10">
+    <h2 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-white drop-shadow-lg">
+      Infraestruturas inteligentes, suporte proativo e soluções personalizadas.
+    </h2>
+	
+<p class="text-xl mb-8 text-white/80 drop-shadow-md">
+  Transformamos tecnologia em soluções eficazes para a tua empresa ou casa.
+</p>
+
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="#contacto" class="bg-cyan-500 hover:bg-cyan-400 text-white px-6 py-3 rounded-full font-medium transition shadow-lg">Peça uma proposta</a>
+      <a href="#servicos" class="bg-transparent border border-white hover:bg-white text-white hover:text-black px-6 py-3 rounded-full font-medium transition shadow-lg">Conhece os serviços</a>
+    </div>
+  </div>
+</section>
 
     <!-- Sobre -->
     <section class="py-20 px-6 max-w-5xl mx-auto" id="sobre">
