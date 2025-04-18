@@ -1,47 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt">
+  
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Hunidas NextLayer IT - Infraestruturas inteligentes, suporte proativo e soluções personalizadas para a tua empresa ou casa.">
-    <link rel="icon" href="favicon.ico">
-    <title>Hunidas NextLayer IT</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <style>
-      html {
-        scroll-behavior: smooth;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hunidas NextLayer IT - Infraestruturas inteligentes, suporte proativo e soluções personalizadas para a tua empresa ou casa.">
+  <link rel="icon" href="favicon.ico">
+  <title>Hunidas NextLayer IT</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <!-- Aqui está o estilo com as animações -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @keyframes spin-slow {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes glow {
+      0%, 100% {
+        filter: drop-shadow(0 0 5px rgba(72, 235, 255, 0.5));
       }
-    </style>
-  </head>
+      50% {
+        filter: drop-shadow(0 0 15px rgba(72, 235, 255, 0.9));
+      }
+    }
+
+    .animate-spin-slow {
+      animation: spin-slow 20s linear infinite;
+    }
+
+    .animate-glow {
+      animation: glow 2s ease-in-out infinite;
+    }
+
+    .drop-shadow-glow {
+      filter: drop-shadow(0 0 5px rgba(72, 235, 255, 0.5));
+    }
+  </style>
+</head>
+  
+  
   <body class="bg-gray-950 text-white">
 
     <!-- Header -->
-    <header class="fixed top-0 w-full bg-gray-900 shadow z-50">
-      <div class="max-w-7xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center">
-        <div class="flex items-center space-x-3">
-          <img src="icone_fundo_1.png" alt="Ícone Hunidas" class="h-12 w-12" />
-          <h1 class="text-2xl font-bold">Hunidas NextLayer IT</h1>
-        </div>
-        <!-- Botão para o menu mobile -->
-        <button id="menu-toggle" class="sm:hidden text-white focus:outline-none" aria-label="Abrir menu">
-          <i class="ph ph-list text-2xl"></i>
-        </button>
+<header class="fixed top-0 w-full bg-gray-900 shadow z-50">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center">
+    <div class="flex items-center space-x-3">
+      <img src="icone_fundo_1.png"
+           alt="Ícone Hunidas"
+           class="h-12 w-12 animate-spin-slow animate-glow drop-shadow-glow transition-transform duration-700" />
+      <h1 class="text-2xl font-bold">Hunidas NextLayer IT</h1>
+    </div>
+    <!-- Botão para o menu mobile -->
+    <button id="menu-toggle" class="sm:hidden text-white focus:outline-none" aria-label="Abrir menu">
+      <i class="ph ph-list text-2xl"></i>
+    </button>
 
-     <!-- Navegação -->
+    <!-- Navegação -->
+    <nav id="nav-menu" class="hidden flex-col space-y-2 text-base w-full mt-4 sm:mt-0 sm:w-auto text-center sm:flex sm:flex-row sm:space-y-0 sm:space-x-6 sm:justify-center">
+      <a href="#sobre" class="block py-1 sm:py-0 hover:text-cyan-400">Sobre</a>
+      <a href="#servicos" class="block py-1 sm:py-0 hover:text-cyan-400">Serviços</a>
+      <a href="#competencias" class="block py-1 sm:py-0 hover:text-cyan-400">Competências</a>
+      <a href="#impacto" class="block py-1 sm:py-0 hover:text-cyan-400">Impacto</a>
+      <a href="#valores" class="block py-1 sm:py-0 hover:text-cyan-400">Valores</a>
+      <a href="#contacto" class="block py-1 sm:py-0 hover:text-cyan-400">Contacto</a>
+    </nav>
+  </div>
+</header>
 
-<nav id="nav-menu" class="hidden flex-col space-y-2 text-base w-full mt-4 sm:mt-0 sm:w-auto text-center sm:flex sm:flex-row sm:space-y-0 sm:space-x-6 sm:justify-center">
-  <a href="#sobre" class="block py-1 sm:py-0 hover:text-cyan-400">Sobre</a>
-  <a href="#servicos" class="block py-1 sm:py-0 hover:text-cyan-400">Serviços</a>
-  <a href="#competencias" class="block py-1 sm:py-0 hover:text-cyan-400">Competências</a>
-  <a href="#impacto" class="block py-1 sm:py-0 hover:text-cyan-400">Impacto</a>
-  <a href="#valores" class="block py-1 sm:py-0 hover:text-cyan-400">Valores</a>
-  <a href="#contacto" class="block py-1 sm:py-0 hover:text-cyan-400">Contacto</a>
-</nav>
-
-
-      </div>
-    </header>
 
     <script>
       // Toggle do menu mobile
@@ -443,11 +474,12 @@
 <!-- Botão "Voltar ao Topo" -->
 <button
   id="backToTop"
-  class="hidden fixed bottom-6 right-6 bg-cyan-500 text-white p-3 rounded-full shadow-lg hover:bg-cyan-400 transition z-50"
+  class="hidden fixed bottom-6 right-6 bg-cyan-500 text-white p-3 rounded-full shadow-lg hover:bg-cyan-400 transition z-50 animate-bounce"
   aria-label="Voltar ao topo"
 >
   <i class="ph ph-arrow-up text-xl"></i>
 </button>
+
 
 
 	 <script>
@@ -533,7 +565,6 @@
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 </script>
-
 
 
   </body>
