@@ -438,25 +438,13 @@
       <p class="text-sm text-gray-400">&copy; 2025 Hunidas NextLayer IT — Todos os direitos reservados</p>
       <p class="text-sm text-gray-400">Email: <a href="mailto:corporate@hunidas.pt" class="underline hover:text-cyan-400">corporate@hunidas.pt</a></p>
     </footer>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const menuToggle = document.getElementById("menu-toggle");
-    const navMenu = document.getElementById("nav-menu");
-    
-    // Ao clicar no hambúrguer, alterna visibilidade do menu
-    if (menuToggle && navMenu) {
-      menuToggle.addEventListener("click", () => {
-        navMenu.classList.toggle("hidden");
-      });
-    }
 
-    // Ao clicar num link do menu em mobile, fecha o menu
-    document.querySelectorAll("#nav-menu a").forEach(link => {
-      link.addEventListener("click", () => {
-        if (window.innerWidth < 640 && !navMenu.classList.contains("hidden")) {
-          navMenu.classList.add("hidden");
-        }
-      });
+	 <script>
+  document.querySelectorAll('#nav-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth < 640) {
+        document.getElementById('nav-menu').classList.add('hidden');
+      }
     });
   });
 </script>
