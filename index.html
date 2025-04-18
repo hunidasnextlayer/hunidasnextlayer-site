@@ -27,15 +27,17 @@
         <button id="menu-toggle" class="sm:hidden text-white focus:outline-none" aria-label="Abrir menu">
           <i class="ph ph-list text-2xl"></i>
         </button>
-        <!-- Menu de navegação com espaçamento ajustado para mobile e desktop -->
-       <nav id="nav-menu" class="hidden sm:flex sm:flex-row sm:space-x-6 sm:justify-center flex-col w-full sm:w-auto text-center bg-gray-900 sm:bg-transparent p-4 rounded-lg sm:rounded-none space-y-4 sm:space-y-0">
-  <a href="#sobre" class="block py-2 text-lg hover:text-cyan-400">Sobre</a>
-  <a href="#servicos" class="block py-2 text-lg hover:text-cyan-400">Serviços</a>
-  <a href="#competencias" class="block py-2 text-lg hover:text-cyan-400">Competências</a>
-  <a href="#impacto" class="block py-2 text-lg hover:text-cyan-400">Impacto</a>
-  <a href="#valores" class="block py-2 text-lg hover:text-cyan-400">Cumplicidade</a>
-  <a href="#contacto" class="block py-2 text-lg hover:text-cyan-400">Contacto</a>
+
+     <!-- Navegação -->
+<nav id="nav-menu" class="hidden sm:flex sm:flex-row sm:space-x-6 sm:justify-center flex-col w-full sm:w-auto text-center bg-gray-900/90 backdrop-blur-md sm:bg-transparent p-4 rounded-lg sm:rounded-none space-y-3 sm:space-y-0">
+  <a href="#sobre" class="block py-2 text-lg hover:text-cyan-400 nav-link">Sobre</a>
+  <a href="#servicos" class="block py-2 text-lg hover:text-cyan-400 nav-link">Serviços</a>
+  <a href="#competencias" class="block py-2 text-lg hover:text-cyan-400 nav-link">Competências</a>
+  <a href="#impacto" class="block py-2 text-lg hover:text-cyan-400 nav-link">Impacto</a>
+  <a href="#valores" class="block py-2 text-lg hover:text-cyan-400 nav-link">Cumplicidade</a>
+  <a href="#contacto" class="block py-2 text-lg hover:text-cyan-400 nav-link">Contacto</a>
 </nav>
+
       </div>
     </header>
 
@@ -434,6 +436,28 @@
       <p class="text-sm text-gray-400">&copy; 2025 Hunidas NextLayer IT — Todos os direitos reservados</p>
       <p class="text-sm text-gray-400">Email: <a href="mailto:corporate@hunidas.pt" class="underline hover:text-cyan-400">corporate@hunidas.pt</a></p>
     </footer>
+
+
+	  <script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav-menu');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  // Abrir e fechar menu
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('hidden');
+  });
+
+  // Fechar menu automaticamente ao clicar num link
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth < 640) {
+        navMenu.classList.add('hidden');
+      }
+    });
+  });
+</script>
+
 
 <script>
   function toggleAccordion(id) {
