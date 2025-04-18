@@ -440,25 +440,16 @@
     </footer>
 
 
-	  <script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const navMenu = document.getElementById('nav-menu');
-  const navLinks = document.querySelectorAll('.nav-link');
-
-  // Abrir e fechar menu
-  menuToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('hidden');
-  });
-
-  // Fechar menu automaticamente ao clicar num link
-  navLinks.forEach(link => {
+<script>
+  document.querySelectorAll('#nav-menu a').forEach(link => {
     link.addEventListener('click', () => {
       if (window.innerWidth < 640) {
-        navMenu.classList.add('hidden');
+        document.getElementById('nav-menu').classList.add('hidden');
       }
     });
   });
 </script>
+
 
 
 <script>
