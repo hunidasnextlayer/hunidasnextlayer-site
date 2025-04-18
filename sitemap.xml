@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://hunidasnextlayer.pt/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://hunidasnextlayer.pt/#sobre</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://hunidasnextlayer.pt/#servicos</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://hunidasnextlayer.pt/#competencias</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://hunidasnextlayer.pt/#impacto</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://hunidasnextlayer.pt/#valores</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://hunidasnextlayer.pt/#contacto</loc>
+    <priority>0.80</priority>
+  </url>
+</urlset>
