@@ -30,15 +30,15 @@
 
      <!-- Navegação -->
 
-<nav id="nav-menu" class="hidden flex-col space-y-2 text-base w-full mt-4 md:mt-0 md:w-auto text-center sm:flex sm:flex-row sm:space-y-0 sm:space-x-6 sm:justify-center">
-<!-- <nav id="nav-menu" class="hidden sm:flex sm:flex-row sm:space-x-6 sm:justify-center flex-col w-full sm:w-auto text-center bg-gray-900/90 backdrop-blur-md sm:bg-transparent p-4 rounded-lg sm:rounded-none space-y-3 sm:space-y-0"> -->
-  <a href="#sobre" class="block py-2 text-lg hover:text-cyan-400 nav-link">Sobre</a>
-  <a href="#servicos" class="block py-2 text-lg hover:text-cyan-400 nav-link">Serviços</a>
-  <a href="#competencias" class="block py-2 text-lg hover:text-cyan-400 nav-link">Competências</a>
-  <a href="#impacto" class="block py-2 text-lg hover:text-cyan-400 nav-link">Impacto</a>
-  <a href="#valores" class="block py-2 text-lg hover:text-cyan-400 nav-link">Cumplicidade</a>
-  <a href="#contacto" class="block py-2 text-lg hover:text-cyan-400 nav-link">Contacto</a>
+<nav id="nav-menu" class="hidden flex-col space-y-2 text-base w-full mt-4 sm:mt-0 sm:w-auto text-center sm:flex sm:flex-row sm:space-y-0 sm:space-x-6 sm:justify-center">
+  <a href="#sobre" class="block py-1 sm:py-0 hover:text-cyan-400">Sobre</a>
+  <a href="#servicos" class="block py-1 sm:py-0 hover:text-cyan-400">Serviços</a>
+  <a href="#competencias" class="block py-1 sm:py-0 hover:text-cyan-400">Competências</a>
+  <a href="#impacto" class="block py-1 sm:py-0 hover:text-cyan-400">Impacto</a>
+  <a href="#valores" class="block py-1 sm:py-0 hover:text-cyan-400">Cumplicidade</a>
+  <a href="#contacto" class="block py-1 sm:py-0 hover:text-cyan-400">Contacto</a>
 </nav>
+
 
       </div>
     </header>
@@ -439,17 +439,26 @@
       <p class="text-sm text-gray-400">Email: <a href="mailto:corporate@hunidas.pt" class="underline hover:text-cyan-400">corporate@hunidas.pt</a></p>
     </footer>
 
-
 <script>
-  document.querySelectorAll('#nav-menu a').forEach(link => {
-    link.addEventListener('click', () => {
-      if (window.innerWidth < 640) {
-        document.getElementById('nav-menu').classList.add('hidden');
-      }
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menu-toggle");
+    const navMenu = document.getElementById("nav-menu");
+
+    // Toggle manual (já usas isto no topo, mas aqui está incluído com segurança)
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("hidden");
+    });
+
+    // Fechar automaticamente ao clicar numa opção em mobile
+    document.querySelectorAll("#nav-menu a").forEach(link => {
+      link.addEventListener("click", () => {
+        if (window.innerWidth < 640) {
+          navMenu.classList.add("hidden");
+        }
+      });
     });
   });
 </script>
-
 
 
 <script>
