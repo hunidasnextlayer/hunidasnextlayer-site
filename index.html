@@ -112,100 +112,137 @@
     <section class="py-20 px-6 bg-gray-950" id="competencias">
       <div class="max-w-6xl mx-auto">
         <h3 class="text-2xl font-bold mb-8 text-cyan-400 text-center flex items-center justify-center gap-2">
+		
+		<div class="text-right mb-6">
+  <button id="toggle-all-competencias" class="text-cyan-400 hover:text-cyan-200 font-medium text-sm">
+    Expandir Todos
+  </button>
+</div>
+
+		
           <i class="ph ph-list-checks text-cyan-400" aria-hidden="true"></i> Competências Técnicas
         </h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-sm text-gray-300">
-          <!-- Competência 1 -->
-          <div class="border border-gray-700 p-4 rounded-lg bg-gray-900 hover:scale-105 transition-transform duration-300">
-            <h4 class="text-base font-semibold text-white mb-2 flex items-center gap-2">
-              <i class="ph ph-desktop text-cyan-400" aria-hidden="true"></i> Sistemas Operativos e Infraestruturas
-            </h4>
-            <ul class="list-disc list-inside space-y-1">
-              <li>Administração de sistemas Microsoft (Windows Server) e Linux</li>
-              <li>Domínio de Active Directory e do ecossistema Windows Server (DNS, GPO, DHCP, WSUS, etc.)</li>
-              <li>Gestão de redes informáticas e desenho de arquiteturas de rede</li>
-              <li>Routing e switching, com conhecimento sólido de redes LAN/WAN</li>
-              <li>Configuração de proxy reverso com Nginx Proxy Manager</li>
-              <li>Alojamento e gestão de websites com CloudPanel</li>
-            </ul>
-          </div>
-          <!-- Competência 2 -->
-          <div class="border border-gray-700 p-4 rounded-lg bg-gray-900 hover:scale-105 transition-transform duration-300">
-            <h4 class="text-base font-semibold text-white mb-2 flex items-center gap-2">
-              <i class="ph ph-database text-cyan-400" aria-hidden="true"></i> Virtualização, Backups e Alta Disponibilidade
-            </h4>
-            <ul class="list-disc list-inside space-y-1">
-              <li>Gestão e implementação de ambientes virtualizados, Hyper-V, vCenter</li>
-              <li>Implementação e manutenção de clusters de alta disponibilidade</li>
-              <li>Estratégias de backup e recuperação com Veeam Backup &amp; Replication</li>
-            </ul>
-          </div>
-          <!-- Competência 3 -->
-          <div class="border border-gray-700 p-4 rounded-lg bg-gray-900 hover:scale-105 transition-transform duration-300">
-            <h4 class="text-base font-semibold text-white mb-2 flex items-center gap-2">
-              <i class="ph ph-code text-cyan-400" aria-hidden="true"></i> Ferramentas Open Source
-            </h4>
-            <ul class="list-disc list-inside space-y-1">
-              <li>GLPI para inventário e gestão de ativos informáticos</li>
-              <li>Zabbix para monitorização de sistemas e dispositivos</li>
-              <li>Apache Guacamole para acesso remoto seguro sem VPN</li>
-              <li>Wazuh para segurança, deteção e resposta a ameaças</li>
-              <li>Implementação de soluções personalizadas com ferramentas open-source</li>
-            </ul>
-          </div>
-          <!-- Competência 4 -->
-          <div class="border border-gray-700 p-4 rounded-lg bg-gray-900 hover:scale-105 transition-transform duration-300">
-            <h4 class="text-base font-semibold text-white mb-2 flex items-center gap-2">
-              <i class="ph ph-house-line text-cyan-400" aria-hidden="true"></i> Domótica e Automação Residencial
-            </h4>
-            <ul class="list-disc list-inside space-y-1">
-              <li>Integração de sistemas inteligentes com Home Assistant</li>
-              <li>Automação de casas com dispositivos Shelly (iluminação, estores, portões, tomadas, etc.)</li>
-              <li>Integração de painéis solares, sensores e dispositivos IoT</li>
-              <li>Transformação de habitações tradicionais em casas inteligentes com soluções personalizadas</li>
-            </ul>
-          </div>
-          <!-- Competência 5 -->
-          <div class="border border-gray-700 p-4 rounded-lg bg-gray-900 hover:scale-105 transition-transform duration-300">
-            <h4 class="text-base font-semibold text-white mb-2 flex items-center gap-2">
-              <i class="ph ph-browser text-cyan-400" aria-hidden="true"></i> Criação, Migração e Otimização de Websites
-            </h4>
-            <ul class="list-disc list-inside space-y-1">
-              <li>Criação e personalização de websites com WordPress e painéis de controlo como CloudPanel</li>
-              <li>Migração de websites entre servidores ou plataformas, garantindo integridade e desempenho</li>
-              <li>Upgrade de versões de CMS (WordPress, Joomla, etc.) com testes de compatibilidade</li>
-              <li>Otimização de desempenho e segurança em websites já existentes</li>
-              <li>Integração de funcionalidades como backups automáticos, certificados SSL e proteção contra ataques</li>
-            </ul>
-          </div>
-          <!-- Competência 6 -->
-          <div class="border border-gray-700 p-4 rounded-lg bg-gray-900 hover:scale-105 transition-transform duration-300">
-            <h4 class="text-base font-semibold text-white mb-2 flex items-center gap-2">
-              <i class="ph ph-cloud text-cyan-400" aria-hidden="true"></i> Plataformas Cloud e Serviços Empresariais
-            </h4>
-            <ul class="list-disc list-inside space-y-1">
-              <li>Administração de ambientes Microsoft 365 (Exchange Online, SharePoint, OneDrive, Teams, etc.)</li>
-              <li>Gestão de contas e políticas no Google Workspace</li>
-              <li>Migração de servidores de email para a cloud (IMAP/POP para Exchange Online ou Gmail)</li>
-              <li>Integração de serviços de email com domínios personalizados e configuração de DNS (MX, SPF, DKIM, DMARC)</li>
-            </ul>
-          </div>
-          <!-- Competência 7 -->
-          <div class="border border-gray-700 p-4 rounded-lg bg-gray-900 hover:scale-105 transition-transform duration-300">
-            <h4 class="text-base font-semibold text-white mb-2 flex items-center gap-2">
-              <i class="ph ph-shield-warning text-cyan-400" aria-hidden="true"></i> Auditoria e Consultoria em Cibersegurança
-            </h4>
-            <ul class="list-disc list-inside space-y-1">
-              <li>Acompanhamento e preparação para conformidade com ISO/IEC 27001 e diretiva NIS2</li>
-              <li>Consultoria alinhada com o selo de maturidade digital em cibersegurança</li>
-              <li>Consultoria e apoio à implementação alinhado com o regime jurídico da segurança do ciberespaço</li>
-              <li>Análise de riscos, identificação de vulnerabilidades e medidas corretivas</li>
-              <li>Apoio na criação de políticas de segurança da informação e planos de continuidade de negócio</li>
-              <li>Formação e sensibilização de equipas para boas práticas de cibersegurança</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+        
+<!-- Accordion: Sistemas Operativos e Infraestruturas -->
+<div class="border border-gray-700 p-4 rounded-lg bg-gray-900 shadow-md transition-transform duration-300">
+  <button onclick="toggleAccordion('accordion-sistemas')" class="w-full text-left flex justify-between items-center text-white text-base font-semibold mb-2">
+    <span class="flex items-center gap-2">
+      <i class="ph ph-desktop text-cyan-400"></i> Sistemas Operativos e Infraestruturas
+    </span>
+    <i id="accordion-icon-sistemas" class="ph ph-plus-circle text-cyan-400 text-xl"></i>
+  </button>
+  <ul id="accordion-sistemas" class="hidden list-disc list-inside space-y-1 text-sm text-gray-300 mt-2">
+    <li>Administração de sistemas Microsoft (Windows Server) e Linux</li>
+    <li>Domínio de Active Directory e do ecossistema Windows Server (DNS, GPO, DHCP, WSUS, etc.)</li>
+    <li>Gestão de redes informáticas e desenho de arquiteturas de rede</li>
+    <li>Routing e switching, com conhecimento sólido de redes LAN/WAN</li>
+    <li>Configuração de proxy reverso com Nginx Proxy Manager</li>
+    <li>Alojamento e gestão de websites com CloudPanel</li>
+  </ul>
+</div>
+
+<!-- Accordion: Virtualização, Backups e Alta Disponibilidade -->
+<div class="border border-gray-700 p-4 rounded-lg bg-gray-900 shadow-md transition-transform duration-300">
+  <button onclick="toggleAccordion('accordion-virtualizacao')" class="w-full text-left flex justify-between items-center text-white text-base font-semibold mb-2">
+    <span class="flex items-center gap-2">
+      <i class="ph ph-database text-cyan-400"></i> Virtualização, Backups e Alta Disponibilidade
+    </span>
+    <i id="accordion-icon-virtualizacao" class="ph ph-plus-circle text-cyan-400 text-xl"></i>
+  </button>
+  <ul id="accordion-virtualizacao" class="hidden list-disc list-inside space-y-1 text-sm text-gray-300 mt-2">
+    <li>Gestão e implementação de ambientes virtualizados, Hyper-V, vCenter</li>
+    <li>Implementação e manutenção de clusters de alta disponibilidade</li>
+    <li>Estratégias de backup e recuperação com Veeam Backup &amp; Replication</li>
+  </ul>
+</div>
+
+<!-- Accordion: Ferramentas Open Source -->
+<div class="border border-gray-700 p-4 rounded-lg bg-gray-900 shadow-md transition-transform duration-300">
+  <button onclick="toggleAccordion('accordion-open')" class="w-full text-left flex justify-between items-center text-white text-base font-semibold mb-2">
+    <span class="flex items-center gap-2">
+      <i class="ph ph-code text-cyan-400"></i> Ferramentas Open Source
+    </span>
+    <i id="accordion-icon-open" class="ph ph-plus-circle text-cyan-400 text-xl"></i>
+  </button>
+  <ul id="accordion-open" class="hidden list-disc list-inside space-y-1 text-sm text-gray-300 mt-2">
+    <li>GLPI para inventário e gestão de ativos informáticos</li>
+    <li>Zabbix para monitorização de sistemas e dispositivos</li>
+    <li>Apache Guacamole para acesso remoto seguro sem VPN</li>
+    <li>Wazuh para segurança, deteção e resposta a ameaças</li>
+    <li>Implementação de soluções personalizadas com ferramentas open-source</li>
+  </ul>
+</div>
+
+<!-- Accordion: Domótica e Automação Residencial -->
+<div class="border border-gray-700 p-4 rounded-lg bg-gray-900 shadow-md transition-transform duration-300">
+  <button onclick="toggleAccordion('accordion-domotica')" class="w-full text-left flex justify-between items-center text-white text-base font-semibold mb-2">
+    <span class="flex items-center gap-2">
+      <i class="ph ph-house-line text-cyan-400"></i> Domótica e Automação Residencial
+    </span>
+    <i id="accordion-icon-domotica" class="ph ph-plus-circle text-cyan-400 text-xl"></i>
+  </button>
+  <ul id="accordion-domotica" class="hidden list-disc list-inside space-y-1 text-sm text-gray-300 mt-2">
+    <li>Integração de sistemas inteligentes com Home Assistant</li>
+    <li>Automação de casas com dispositivos Shelly (iluminação, estores, portões, tomadas, etc.)</li>
+    <li>Integração de painéis solares, sensores e dispositivos IoT</li>
+    <li>Transformação de habitações tradicionais em casas inteligentes com soluções personalizadas</li>
+  </ul>
+</div>
+
+<!-- Accordion: Criação, Migração e Otimização de Websites -->
+<div class="border border-gray-700 p-4 rounded-lg bg-gray-900 shadow-md transition-transform duration-300">
+  <button onclick="toggleAccordion('accordion-sites')" class="w-full text-left flex justify-between items-center text-white text-base font-semibold mb-2">
+    <span class="flex items-center gap-2">
+      <i class="ph ph-browser text-cyan-400"></i> Criação, Migração e Otimização de Websites
+    </span>
+    <i id="accordion-icon-sites" class="ph ph-plus-circle text-cyan-400 text-xl"></i>
+  </button>
+  <ul id="accordion-sites" class="hidden list-disc list-inside space-y-1 text-sm text-gray-300 mt-2">
+    <li>Criação e personalização de websites com WordPress e CloudPanel</li>
+    <li>Migração de websites entre servidores ou plataformas</li>
+    <li>Upgrade de versões de CMS (WordPress, Joomla, etc.)</li>
+    <li>Otimização de desempenho e segurança em websites já existentes</li>
+    <li>Integração de backups, certificados SSL e proteção contra ataques</li>
+  </ul>
+</div>
+
+<!-- Accordion: Plataformas Cloud e Serviços Empresariais -->
+<div class="border border-gray-700 p-4 rounded-lg bg-gray-900 shadow-md transition-transform duration-300">
+  <button onclick="toggleAccordion('accordion-cloud')" class="w-full text-left flex justify-between items-center text-white text-base font-semibold mb-2">
+    <span class="flex items-center gap-2">
+      <i class="ph ph-cloud text-cyan-400"></i> Plataformas Cloud e Serviços Empresariais
+    </span>
+    <i id="accordion-icon-cloud" class="ph ph-plus-circle text-cyan-400 text-xl"></i>
+  </button>
+  <ul id="accordion-cloud" class="hidden list-disc list-inside space-y-1 text-sm text-gray-300 mt-2">
+    <li>Administração de ambientes Microsoft 365</li>
+    <li>Gestão de contas no Google Workspace</li>
+    <li>Migração de emails para a cloud</li>
+    <li>Integração com domínios personalizados e DNS (MX, SPF, DKIM, DMARC)</li>
+  </ul>
+</div>
+
+<!-- Accordion: Auditoria e Consultoria em Cibersegurança -->
+<div class="border border-gray-700 p-4 rounded-lg bg-gray-900 shadow-md transition-transform duration-300">
+  <button onclick="toggleAccordion('accordion-ciberseguranca')" class="w-full text-left flex justify-between items-center text-white text-base font-semibold mb-2">
+    <span class="flex items-center gap-2">
+      <i class="ph ph-shield-warning text-cyan-400"></i> Auditoria e Consultoria em Cibersegurança
+    </span>
+    <i id="accordion-icon-ciberseguranca" class="ph ph-plus-circle text-cyan-400 text-xl"></i>
+  </button>
+  <ul id="accordion-ciberseguranca" class="hidden list-disc list-inside space-y-1 text-sm text-gray-300 mt-2">
+    <li>Conformidade com ISO/IEC 27001 e diretiva NIS2</li>
+    <li>Consultoria alinhada com o selo de maturidade digital</li>
+    <li>Apoio à implementação do regime jurídico da segurança do ciberespaço</li>
+    <li>Análise de riscos e identificação de vulnerabilidades</li>
+    <li>Políticas de segurança e planos de continuidade de negócio</li>
+    <li>Formação e sensibilização em cibersegurança</li>
+  </ul>
+</div>
+
+	  
+	  
+</div>
     </section>
 
     <!-- Impacto -->
@@ -218,29 +255,66 @@
           Na Hunidas NextLayer, o nosso trabalho tem um propósito claro: proteger e fortalecer quem depende da tecnologia para trabalhar, viver e crescer.
           Queremos garantir que cada pessoa e cada empresa, independentemente da sua dimensão, tenha acesso a soluções digitais seguras, acessíveis e bem pensadas.
         </p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div class="bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-105 hover:brightness-110 transition-transform duration-300 flex flex-col h-full">
-            <h4 class="text-2xl font-semibold text-white mb-4 flex items-center gap-2">
-              <i class="ph ph-user text-cyan-400" aria-hidden="true"></i> Pequenos negócios e utilizadores individuais
-            </h4>
-            <ul class="list-disc list-inside space-y-2 text-gray-300">
-              <li>Apoiamos profissionais independentes, pequenas equipas e também quem, nas suas casas, quer proteger a rede, os dados e os dispositivos do dia a dia. Muitas vezes trancamos a porta a sete chaves, mas deixamos a casa exposta através da rede de internet.</li>
-              <li>Com pequenos gestos, metodologias simples e equipamentos acessíveis, conseguimos acrescentar camadas reais de segurança à vida digital, seja numa rede doméstica, numa pequena empresa ou num portátil de trabalho.</li>
-              <li>Ajudamos a guardar ficheiros com segurança, proteger contas de email, criar backups automáticos e ter uma presença digital eficaz, mesmo com orçamentos reduzidos.</li>
-            </ul>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-105 hover:brightness-110 transition-transform duration-300 flex flex-col h-full">
-            <h4 class="text-2xl font-semibold text-white mb-4 flex items-center gap-2">
-              <i class="ph ph-buildings text-cyan-400" aria-hidden="true"></i> Empresas com estruturas maiores
-            </h4>
-            <ul class="list-disc list-inside space-y-2 text-gray-300">
-              <li>Para empresas de maior dimensão, escalamos as mesmas boas práticas com soluções mais robustas.</li>
-              <li>Organizamos infraestruturas, reforçamos a cibersegurança, damos suporte técnico contínuo e apoiamos na migração para a cloud, gestão de serviços digitais e criação de políticas internas.</li>
-              <li>Adaptamos cada solução à realidade do cliente com proximidade, confiança e visão a longo prazo.</li>
-              <li>Mais do que fornecer soluções, ajudamos a construir estratégias digitais sólidas, que crescem com o negócio e protegem o que é mais valioso: a informação e a continuidade.</li>
-            </ul>
-          </div>
-        </div>
+        
+		
+		<!-- Accordion: Pequenos negócios -->
+<div class="bg-gray-800 p-6 rounded-xl shadow-md transition-transform duration-300">
+  <button
+    class="w-full flex justify-between items-center text-left text-2xl font-semibold text-white mb-4"
+    onclick="toggleAccordion('accordion-negocios')"
+  >
+    <span class="flex items-center gap-2">
+      <i class="ph ph-user text-cyan-400"></i>
+      Pequenos negócios e utilizadores individuais
+    </span>
+    <i id="accordion-icon-negocios" class="ph ph-plus-circle text-cyan-400 text-2xl transition-transform duration-300"></i>
+  </button>
+
+  <div id="accordion-negocios" class="hidden mt-2 text-gray-300 space-y-3">
+    <div class="flex items-start gap-2">
+      <i class="ph ph-lock-key text-cyan-400 mt-1"></i>
+      <span>Apoiamos profissionais independentes, pequenas equipas e quem quer proteger a sua rede doméstica.</span>
+    </div>
+    <div class="flex items-start gap-2">
+      <i class="ph ph-shield-check text-cyan-400 mt-1"></i>
+      <span>Com pequenos gestos e equipamentos acessíveis, acrescentamos segurança real à vida digital.</span>
+    </div>
+    <div class="flex items-start gap-2">
+      <i class="ph ph-cloud-arrow-up text-cyan-400 mt-1"></i>
+      <span>Configuramos backups, protegemos emails e criamos presença digital eficaz — mesmo com orçamentos reduzidos.</span>
+    </div>
+  </div>
+</div>
+
+<!-- Accordion: Empresas maiores -->
+<div class="bg-gray-800 p-6 rounded-xl shadow-md transition-transform duration-300">
+  <button
+    class="w-full flex justify-between items-center text-left text-2xl font-semibold text-white mb-4"
+    onclick="toggleAccordion('accordion-empresas')"
+  >
+    <span class="flex items-center gap-2">
+      <i class="ph ph-buildings text-cyan-400"></i>
+      Empresas com estruturas maiores
+    </span>
+    <i id="accordion-icon-empresas" class="ph ph-plus-circle text-cyan-400 text-2xl transition-transform duration-300"></i>
+  </button>
+
+  <div id="accordion-empresas" class="hidden mt-2 text-gray-300 space-y-3">
+    <div class="flex items-start gap-2">
+      <i class="ph ph-gear-six text-cyan-400 mt-1"></i>
+      <span>Escalamos boas práticas com soluções robustas e ajustadas à realidade de cada organização.</span>
+    </div>
+    <div class="flex items-start gap-2">
+      <i class="ph ph-cloud-check text-cyan-400 mt-1"></i>
+      <span>Damos suporte técnico contínuo, organizamos infraestruturas e ajudamos na transição para a cloud.</span>
+    </div>
+    <div class="flex items-start gap-2">
+      <i class="ph ph-lightbulb text-cyan-400 mt-1"></i>
+      <span>Construímos estratégias digitais sólidas, que protegem informação e crescem com o negócio.</span>
+    </div>
+  </div>
+</div>
+
       </div>
     </section>
 
@@ -251,34 +325,94 @@
           <i class="ph ph-handshake text-cyan-300 animate-bounce" aria-hidden="true"></i> Cumplicidade
         </h3>
         <p class="text-lg max-w-8xl text-white mb-4">Mais do que tecnologia, oferecemos relações de proximidade, profissionalismo e carácter. Por trás do suporte estão pessoas com valores, atitudes e compromisso genuíno. É esta cumplicidade que garante confiança, transparência e resultados a longo prazo.</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div class="bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-105 hover:brightness-110 transition-transform duration-300 flex flex-col h-full">
-            <h4 class="text-2xl font-semibold text-white mb-4 flex items-center gap-2">
-              <i class="ph ph-users-four text-cyan-400" aria-hidden="true"></i> Competências Humanas
-            </h4>
-            <ul class="list-disc list-inside space-y-2 text-gray-300">
-              <li>Comunicação clara e acessível, mesmo para quem não domina a linguagem técnica</li>
-              <li>Empatia e escuta ativa, com foco nas necessidades e preocupações de quem nos contacta</li>
-              <li>Sentido de responsabilidade e compromisso, tratamos os problemas do cliente como se fossem nossos</li>
-              <li>Proatividade e atitude positiva na resolução de desafios</li>
-              <li>Colaboração e espírito de equipa, tanto internamente como com parceiros e clientes</li>
-              <li>Adaptabilidade a contextos exigentes, mantendo sempre o profissionalismo</li>
-              <li>Abertura à crítica construtiva e foco na melhoria contínua</li>
-            </ul>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-xl hover:scale-105 hover:brightness-110 transition-transform duration-300 flex flex-col h-full">
-            <h4 class="text-2xl font-semibold text-white mb-4 flex items-center gap-2">
-              <i class="ph ph-target text-cyan-400" aria-hidden="true"></i> É assim que trabalhamos
-            </h4>
-            <ul class="list-disc list-inside space-y-2 text-gray-300">
-              <li>Exigência elevada connosco, mesmo quando o “suficientemente bom” já resolve</li>
-              <li>Impacientes com a burocracia ou ineficiência, mas focados em resultados rápidos e eficazes</li>
-              <li>Foco intenso no trabalho, sem esquecer de cuidar dos que estão connosco</li>
-              <li>Persistência com o objetivo de encontrar a melhor solução</li>
-              <li>Genuinamente envolvidos nos projetos, porque nos importamos de verdade</li>
-            </ul>
-          </div>
-        </div>
+       
+
+<!-- Competências Humanas como Accordion -->
+<div class="bg-gray-800 p-6 rounded-xl shadow-md transition-transform duration-300">
+  <button
+    class="w-full flex justify-between items-center text-left text-2xl font-semibold text-white mb-4"
+    onclick="toggleAccordion('accordion-humanas')"
+  >
+    <span class="flex items-center gap-2">
+      <i class="ph ph-users-four text-cyan-400"></i>
+      Competências Humanas
+    </span>
+    <i id="accordion-icon-humanas" class="ph ph-plus-circle text-cyan-400 text-2xl transition-transform duration-300"></i>
+  </button>
+
+  <div id="accordion-humanas" class="hidden mt-2 text-gray-300 space-y-3">
+    <div class="flex items-start gap-2">
+      <i class="ph ph-chat-circle-dots text-cyan-400 text-lg mt-1"></i>
+      <span>Comunicação clara e acessível, mesmo para quem não domina a linguagem técnica</span>
+    </div>
+    <div class="flex items-start gap-2">
+      <i class="ph ph-ear text-cyan-400 text-lg mt-1"></i>
+      <span>Empatia e escuta ativa, com foco nas necessidades e preocupações de quem nos contacta</span>
+    </div>
+    <div class="flex items-start gap-2">
+      <i class="ph ph-handshake text-cyan-400 text-lg mt-1"></i>
+      <span>Sentido de responsabilidade e compromisso: tratamos os problemas do cliente como se fossem nossos</span>
+    </div>
+    <div class="flex items-start gap-2">
+      <i class="ph ph-lightning text-cyan-400 text-lg mt-1"></i>
+      <span>Proatividade e atitude positiva na resolução de desafios</span>
+    </div>
+    <div class="flex items-start gap-2">
+      <i class="ph ph-users-three text-cyan-400 text-lg mt-1"></i>
+      <span>Colaboração e espírito de equipa, tanto internamente como com parceiros e clientes</span>
+    </div>
+    <div class="flex items-start gap-2">
+      <i class="ph ph-pulse text-cyan-400 text-lg mt-1"></i>
+      <span>Adaptabilidade a contextos exigentes, mantendo sempre o profissionalismo</span>
+    </div>
+    <div class="flex items-start gap-2">
+      <i class="ph ph-target text-cyan-400 text-lg mt-1"></i>
+      <span>Abertura à crítica construtiva e foco na melhoria contínua</span>
+    </div>
+  </div>
+</div>
+
+<!-- É assim que trabalhamos como Accordion -->
+<div class="bg-gray-800 p-6 rounded-xl shadow-md transition-transform duration-300">
+  <button
+    class="w-full flex justify-between items-center text-left text-2xl font-semibold text-white mb-4"
+    onclick="toggleAccordion('accordion-trabalho')"
+  >
+    <span class="flex items-center gap-2">
+      <i class="ph ph-target text-cyan-400"></i>
+      É assim que trabalhamos
+    </span>
+    <i id="accordion-icon-trabalho" class="ph ph-plus-circle text-cyan-400 text-2xl transition-transform duration-300"></i>
+  </button>
+
+  <div id="accordion-trabalho" class="hidden mt-2 text-gray-300 space-y-3">
+    <div class="flex items-start gap-2">
+      <i class="ph ph-check-circle text-cyan-400 text-lg mt-1"></i>
+      <span>Exigência elevada connosco, mesmo quando o “suficientemente bom” já resolve</span>
+    </div>
+    <div class="flex items-start gap-2">
+      <i class="ph ph-timer text-cyan-400 text-lg mt-1"></i>
+      <span>Impacientes com burocracia ou ineficiência — queremos resultados rápidos e eficazes</span>
+    </div>
+    <div class="flex items-start gap-2">
+      <i class="ph ph-heartbeat text-cyan-400 text-lg mt-1"></i>
+      <span>Foco intenso no trabalho, sem esquecer de cuidar dos que estão connosco</span>
+    </div>
+    <div class="flex items-start gap-2">
+      <i class="ph ph-arrow-circle-up-right text-cyan-400 text-lg mt-1"></i>
+      <span>Persistência com o objetivo de encontrar a melhor solução</span>
+    </div>
+    <div class="flex items-start gap-2">
+      <i class="ph ph-hand-heart text-cyan-400 text-lg mt-1"></i>
+      <span>Genuinamente envolvidos nos projetos, porque nos importamos de verdade</span>
+    </div>
+  </div>
+</div>
+
+		
+		
+		
+		
         <div class="mt-12 flex justify-center">
           <img src="icone_fundo_1.png" alt="Logótipo Hunidas NextLayer IT" class="h-24 md:h-32 opacity-80 hover:opacity-100 transition duration-300">
         </div>
@@ -300,6 +434,62 @@
       <p class="text-sm text-gray-400">&copy; 2025 Hunidas NextLayer IT — Todos os direitos reservados</p>
       <p class="text-sm text-gray-400">Email: <a href="mailto:corporate@hunidas.pt" class="underline hover:text-cyan-400">corporate@hunidas.pt</a></p>
     </footer>
+
+<script>
+  function toggleAccordion(id) {
+    const content = document.getElementById(id);
+    const icon = document.getElementById('accordion-icon-' + id.split('-')[1]);
+    content.classList.toggle('hidden');
+    icon.classList.toggle('ph-plus-circle');
+    icon.classList.toggle('ph-minus-circle');
+  }
+</script>
+
+<script>
+  // Script já existente
+  function toggleAccordion(id) {
+    const content = document.getElementById(id);
+    const icon = document.getElementById('accordion-icon-' + id.split('-')[1]);
+    content.classList.toggle('hidden');
+    icon.classList.toggle('ph-plus-circle');
+    icon.classList.toggle('ph-minus-circle');
+  }
+
+  // Novo script para Expandir/Fechar todos
+  const toggleAllBtn = document.getElementById("toggle-all-competencias");
+  let allOpen = false;
+
+  toggleAllBtn.addEventListener("click", () => {
+    allOpen = !allOpen;
+    const ids = [
+      'sistemas',
+      'virtualizacao',
+      'open',
+      'domotica',
+      'sites',
+      'cloud',
+      'ciberseguranca'
+    ];
+    
+    ids.forEach(key => {
+      const content = document.getElementById('accordion-' + key);
+      const icon = document.getElementById('accordion-icon-' + key);
+      
+      if (allOpen) {
+        content.classList.remove('hidden');
+        icon.classList.remove('ph-plus-circle');
+        icon.classList.add('ph-minus-circle');
+      } else {
+        content.classList.add('hidden');
+        icon.classList.add('ph-plus-circle');
+        icon.classList.remove('ph-minus-circle');
+      }
+    });
+
+    toggleAllBtn.textContent = allOpen ? 'Fechar Todos' : 'Expandir Todos';
+  });
+</script>
+
 
   </body>
 </html>
