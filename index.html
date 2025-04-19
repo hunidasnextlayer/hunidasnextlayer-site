@@ -49,45 +49,51 @@
 
     <!-- Header -->
 <header class="fixed top-0 w-full bg-gray-900 shadow z-50">
-  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-    
-    <!-- Logo + Nome -->
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <!-- LOGO + TÍTULO -->
     <div class="flex items-center space-x-3">
-      <img src="icone_fundo_1.png" alt="Ícone Hunidas" class="h-10 w-10" />
-      <h1 class="text-2x1 font-bold tracking-tight whitespace-nowrap">
-    <span class="text-white">Hunidas</span>
-    <span class="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 bg-clip-text text-transparent">NextLayer</span>
-    <span class="text-sm text-gray-300 align-top m4-4">IT</span>
-  </h1>
-
+      <img src="icone_fundo_1.png"
+           alt="Ícone Hunidas"
+           class="h-10 w-10 animate-spin-slow animate-glow drop-shadow-glow transition-transform duration-700" />
+      <h1 class="text-2xl font-bold flex items-baseline">
+        <span class="text-white">Hunidas</span>
+        <span class="ml-1 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">NextLayer</span>
+        <span class="text-xs text-gray-400 ml-1 align-super">IT</span>
+      </h1>
     </div>
 
-    <!-- Navegação -->
-    <nav class="hidden sm:flex space-x-6 text-sm text-white">
-      <a href="#sobre" class="hover:text-cyan-400">Sobre</a>
-      <a href="#servicos" class="hover:text-cyan-400">Serviços</a>
-      <a href="#competencias" class="hover:text-cyan-400">Competências</a>
-      <a href="#impacto" class="hover:text-cyan-400">Impacto</a>
-      <a href="#valores" class="hover:text-cyan-400">Valores</a>
-      <a href="#contacto" class="hover:text-cyan-400">Contacto</a>
-    </nav>
-
-    <!-- Botão Mobile -->
+    <!-- BOTÃO HAMBÚRGUER MOBILE -->
     <button id="menu-toggle" class="sm:hidden text-white focus:outline-none" aria-label="Abrir menu">
       <i class="ph ph-list text-2xl"></i>
     </button>
+
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav id="nav-menu" class="hidden sm:flex sm:flex-row sm:space-x-6 text-center flex-col sm:flex-grow sm:justify-end mt-4 sm:mt-0 space-y-4 sm:space-y-0 w-full sm:w-auto">
+      <a href="#sobre" class="hover:text-cyan-400 block sm:inline" onclick="fecharMenu()">Sobre</a>
+      <a href="#servicos" class="hover:text-cyan-400 block sm:inline" onclick="fecharMenu()">Serviços</a>
+      <a href="#competencias" class="hover:text-cyan-400 block sm:inline" onclick="fecharMenu()">Competências</a>
+      <a href="#impacto" class="hover:text-cyan-400 block sm:inline" onclick="fecharMenu()">Impacto</a>
+      <a href="#valores" class="hover:text-cyan-400 block sm:inline" onclick="fecharMenu()">Valores</a>
+      <a href="#contacto" class="hover:text-cyan-400 block sm:inline" onclick="fecharMenu()">Contacto</a>
+    </nav>
   </div>
+
+  <!-- SCRIPT PARA MENU MOBILE -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('hidden');
+    });
+
+    function fecharMenu() {
+      if (window.innerWidth < 640) {
+        navMenu.classList.add('hidden');
+      }
+    }
+  </script>
 </header>
-
-
-    <script>
-      // Toggle do menu mobile
-      const menuToggle = document.getElementById('menu-toggle');
-      const navMenu = document.getElementById('nav-menu');
-      menuToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('hidden');
-      });
-    </script>
 
     <!-- Hero -->
   <section
