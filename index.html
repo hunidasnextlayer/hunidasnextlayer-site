@@ -62,7 +62,7 @@
       </h1>
     </div>
 
-    <!-- BOTÃO HAMBÚRGUER MOBILE -->
+<!-- Botão para o menu mobile -->
     <button id="menu-toggle" class="sm:hidden text-white focus:outline-none" aria-label="Abrir menu">
       <i class="ph ph-list text-2xl"></i>
     </button>
@@ -80,19 +80,13 @@
 
   <!-- SCRIPT PARA MENU MOBILE -->
   <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const navMenu = document.getElementById('nav-menu');
-
-    menuToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('hidden');
-    });
-
-    function fecharMenu() {
-      if (window.innerWidth < 640) {
-        navMenu.classList.add('hidden');
-      }
-    }
-  </script>
+      // Toggle do menu mobile
+      const menuToggle = document.getElementById('menu-toggle');
+      const navMenu = document.getElementById('nav-menu');
+      menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
+      });
+    </script>
 </header>
 
     <!-- Hero -->
