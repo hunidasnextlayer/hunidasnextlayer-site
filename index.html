@@ -181,34 +181,23 @@
 </section>
 
 
-    <!-- Competências Técnicas -->
-    <section class="py-20 px-6 bg-gray-950" id="competencias">
-      <div class="max-w-6xl mx-auto">
-        <h3 class="text-2xl font-bold mb-8 text-cyan-400 text-center flex items-center justify-center gap-2">
-		
-		<div class="text-right mb-6">
-  <button id="toggle-all-competencias" class="text-cyan-400 hover:text-cyan-200 font-medium text-sm">
-    Expandir Todos
-  </button>
-</div>
-
-		
-          <i class="ph ph-list-checks text-cyan-400" aria-hidden="true"></i> Competências Técnicas
-        </h3>
-        
-<!-- Accordion: Sistemas Operativos e Infraestruturas -->
+   <!-- Accordion: Sistemas Operativos e Infraestruturas -->
 <div class="border border-gray-700 p-4 rounded-lg bg-gray-900 shadow-md transition-transform duration-300 w-full max-w-4xl mx-auto">
-  <button onclick="toggleAccordion('accordion-open')" class="w-full text-left flex justify-between items-center text-white text-base font-semibold mb-2">
+  <button onclick="toggleAccordion('accordion-sistemas')" class="w-full text-left flex justify-between items-center text-white text-base font-semibold mb-2">
     <span class="flex items-center gap-2">
-      <i class="ph ph-code text-cyan-400"></i></i> Sistemas Operativos e Infraestruturas
+      <i class="ph ph-desktop text-cyan-400"></i> Sistemas Operativos e Infraestruturas
     </span>
     <i id="accordion-icon-sistemas" class="ph ph-plus-circle text-cyan-400 text-xl"></i>
   </button>
-  <ul id="accordion-virtualizacao" class="hidden mt-3 text-base md:text-lg text-gray-300 leading-relaxed space-y-1.5 list-none">
-  <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Gestão e implementação de ambientes virtualizados, Hyper-V, vCenter</li>
-  <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Implementação e manutenção de clusters de alta disponibilidade</li>
-  <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Estratégias de backup e recuperação com Veeam Backup &amp; Replication</li>
-</ul>
+  <ul id="accordion-sistemas" class="hidden mt-3 text-base md:text-lg text-gray-300 leading-relaxed space-y-1.5 list-none">
+    <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Administração de sistemas Microsoft (Windows Server) e Linux</li>
+    <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Domínio de Active Directory e do ecossistema Windows Server (DNS, GPO, DHCP, WSUS, etc.)</li>
+    <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Gestão de redes informáticas e desenho de arquiteturas de rede</li>
+    <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Routing e switching, com conhecimento sólido de redes LAN/WAN</li>
+    <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Configuração de proxy reverso com Nginx Proxy Manager</li>
+    <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Alojamento e gestão de websites com CloudPanel</li>
+  </ul>
+</div>
 </div>
 </div>
 
@@ -220,11 +209,12 @@
     </span>
     <i id="accordion-icon-virtualizacao" class="ph ph-plus-circle text-cyan-400 text-xl"></i>
   </button>
-  <ul id="accordion-sistemas" class="hidden mt-3 text-base md:text-lg text-gray-300 leading-relaxed space-y-1.5 list-none">
-    <li>Gestão e implementação de ambientes virtualizados, Hyper-V, vCenter</li>
-    <li>Implementação e manutenção de clusters de alta disponibilidade</li>
-    <li>Estratégias de backup e recuperação com Veeam Backup &amp; Replication</li>
+  <ul id="accordion-virtualizacao" class="hidden mt-3 text-base md:text-lg text-gray-300 leading-relaxed space-y-1.5 list-none">
+    <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Gestão e implementação de ambientes virtualizados, Hyper-V, vCenter</li>
+    <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Implementação e manutenção de clusters de alta disponibilidade</li>
+    <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Estratégias de backup e recuperação com Veeam Backup &amp; Replication</li>
   </ul>
+</div>
 </div>
 
 <!-- Accordion: Ferramentas Open Source -->
