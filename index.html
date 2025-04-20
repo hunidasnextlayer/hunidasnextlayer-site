@@ -350,8 +350,8 @@
     </h3>
 
     <!-- SLIDESHOW HORIZONTAL -->
-    <div class="relative flex items-center">
-      <div class="swiper blog-swiper w-full pr-24">
+    <div class="relative flex flex-col md:flex-row items-center">
+      <div class="swiper blog-swiper w-full md:pr-24">
         <div class="swiper-wrapper">
 
           <!-- Artigo 1 -->
@@ -393,8 +393,8 @@
         </div>
       </div>
 
-      <!-- Botões de navegação ao lado dos cartões -->
-      <div class="absolute right-0 top-1/2 translate-x-full -translate-y-1/2 flex flex-col gap-2 z-10">
+      <!-- Botões de navegação ao lado dos cartões (ajustados para mobile) -->
+      <div class="absolute md:static right-8 md:right-6 top-1/2 md:top-auto md:ml-4 -translate-y-1/2 md:translate-y-0 flex flex-col gap-2 z-10">
         <div class="swiper-button-prev-blog cursor-pointer bg-gray-700 hover:bg-gray-600 rounded-full p-2">
           <i class="ph ph-arrow-left text-white"></i>
         </div>
@@ -406,7 +406,7 @@
     </div>
   </div>
 </section>
-    
+
 
 <!-- Impacto -->
     <section class="py-24 px-6 bg-gradient-to-b from-gray-900 via-gray-950 to-gray-900 text-gray-100 shadow-inner animate-fade-in" id="impacto">
@@ -728,8 +728,6 @@
     blogContainer.addEventListener('mouseleave', () => swiperBlog.autoplay.start());
   });
 </script>
-
-
 
   </body>
 </html>
