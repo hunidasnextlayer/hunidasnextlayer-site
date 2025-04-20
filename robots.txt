@@ -1,4 +1,3 @@
 User-agent: *
-Disallow:
-
-Sitemap: https://hunidasnextlayer.pt/sitemap.xml
+Allow: /
+Sitemap: https://hunidas.pt/sitemap.xml
