@@ -1,31 +1,23 @@
+<!-- sitemap.xml -->
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://hunidasnextlayer.pt/</loc>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://hunidasnextlayer.pt/#sobre</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://hunidasnextlayer.pt/#servicos</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://hunidasnextlayer.pt/#competencias</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://hunidasnextlayer.pt/#impacto</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://hunidasnextlayer.pt/#valores</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://hunidasnextlayer.pt/#contacto</loc>
-    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
 </urlset>
+
+<!-- robots.txt -->
+User-agent: *
+Allow: /
+Sitemap: https://hunidasnextlayer.pt/sitemap.xml
+
+<!-- Google Site Verification (adiciona ao <head>) -->
+<meta name="google-site-verification" content="INSERE_AQUI_O_CODIGO_DO_GOOGLE" />
+
+<!-- Sugestão: script JS para forçar indexação em debug -->
+<!-- Este script é apenas informativo e pode ser removido -->
+<script>
+  console.log("Hunidas NextLayer SEO ativo - Sitemap e Robots configurados");
+</script>
