@@ -1,13 +1,4 @@
-<!-- robots.txt -->
 User-agent: *
 Allow: /
+
 Sitemap: https://hunidasnextlayer.pt/sitemap.xml
-
-<!-- Google Site Verification (adiciona ao <head>) -->
-<meta name="google-site-verification" content="INSERE_AQUI_O_CODIGO_DO_GOOGLE" />
-
-<!-- Sugestão: script JS para forçar indexação em debug -->
-<!-- Este script é apenas informativo e pode ser removido -->
-<script>
-  console.log("Hunidas NextLayer SEO ativo - Sitemap e Robots configurados");
-</script>
