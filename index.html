@@ -34,6 +34,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
+
   <!-- Aqui está o estilo com as animações -->
   <style>
     html {
@@ -153,8 +154,6 @@
       <p class="text-lg">Na Hunidas NextLayer, somos uma equipa de freelancers especializados em soluções de TI. Oferecemos serviços que combinam eficiência, inovação e suporte dedicado, sempre com uma abordagem personalizada, garantimos o bom funcionamento das infraestruturas tecnológicas dos nossos clientes.</p>
       <p class="text-lg mt-4">Acreditamos que a tecnologia deve proteger, simplificar e criar tranquilidade, e não ser um peso difícil de compreender ou pagar.</p>
     </section>
-
-
 
 
     <!-- Serviços -->
@@ -342,6 +341,7 @@
 </div>
     </section>
 	
+
 <!-- Secção Blog & Notícias -->
 <section class="py-24 px-4 sm:px-6 bg-gray-950 text-gray-100 shadow-inner" id="blog">
   <div class="max-w-6xl mx-auto">
@@ -350,12 +350,12 @@
     </h3>
 
     <!-- SLIDESHOW HORIZONTAL -->
-    <div class="relative group">
-      <div class="swiper blog-swiper">
+    <div class="relative flex items-center">
+      <div class="swiper blog-swiper w-full pr-24">
         <div class="swiper-wrapper">
 
-           <!-- Artigo 1 -->
-          <div class="swiper-slide bg-gray-900 p-4 sm:p-5 rounded-xl shadow-md hover:shadow-lg transition flex flex-col justify-between h-full min-h-[140px] max-h-[280px]">
+          <!-- Artigo 1 -->
+          <div class="swiper-slide bg-gray-900 p-4 sm:p-5 rounded-xl shadow-md hover:shadow-lg transition flex flex-col justify-between min-h-[180px] max-h-[280px] w-[320px]">
             <div>
               <h4 class="text-base sm:text-lg font-semibold text-white mb-2">Apache Guacamole: Acesso remoto sem VPN</h4>
               <p class="text-gray-400 text-sm mb-4">Sabias que é possível aceder remotamente a computadores e servidores de forma segura, sem instalar qualquer software no cliente?</p>
@@ -364,7 +364,7 @@
           </div>
 
           <!-- Artigo 2 -->
-          <div class="swiper-slide bg-gray-900 p-4 sm:p-5 rounded-xl shadow-md hover:shadow-lg transition flex flex-col justify-between h-full min-h-[140px] max-h-[280px]">
+          <div class="swiper-slide bg-gray-900 p-4 sm:p-5 rounded-xl shadow-md hover:shadow-lg transition flex flex-col justify-between min-h-[180px] max-h-[280px] w-[320px]">
             <div>
               <h4 class="text-base sm:text-lg font-semibold text-white mb-2">CloudPanel: Alojamento moderno e simplificado</h4>
               <p class="text-gray-400 text-sm mb-4">Descobre como alojamos e gerimos sites com eficiência e segurança, utilizando CloudPanel com Docker e Debian 12.</p>
@@ -373,7 +373,7 @@
           </div>
 
           <!-- Artigo 3 -->
-          <div class="swiper-slide bg-gray-900 p-4 sm:p-5 rounded-xl shadow-md hover:shadow-lg transition flex flex-col justify-between h-full min-h-[140px] max-h-[280px]">
+          <div class="swiper-slide bg-gray-900 p-4 sm:p-5 rounded-xl shadow-md hover:shadow-lg transition flex flex-col justify-between min-h-[180px] max-h-[280px] w-[320px]">
             <div>
               <h4 class="text-base sm:text-lg font-semibold text-white mb-2">SIEM, XDR e SOC: Proteção ativa em ambientes modernos</h4>
               <p class="text-gray-400 text-sm mb-4">Explora como estas ferramentas e serviços ajudam na deteção, resposta e prevenção de ciberameaças em tempo real.</p>
@@ -382,7 +382,7 @@
           </div>
 
           <!-- Artigo 4 -->
-          <div class="swiper-slide bg-gray-900 p-4 sm:p-5 rounded-xl shadow-md hover:shadow-lg transition flex flex-col justify-between h-full min-h-[140px] max-h-[280px]">
+          <div class="swiper-slide bg-gray-900 p-4 sm:p-5 rounded-xl shadow-md hover:shadow-lg transition flex flex-col justify-between min-h-[180px] max-h-[280px] w-[320px]">
             <div>
               <h4 class="text-base sm:text-lg font-semibold text-white mb-2">Cibersegurança Exa: o poder dos Honeypots</h4>
               <p class="text-gray-400 text-sm mb-4">Partilhei os dados recolhidos com o meu honeypot T-Pot e como esta abordagem ajuda a compreender ataques reais e reforçar a nossa postura de segurança.</p>
@@ -391,22 +391,22 @@
           </div>
 
         </div>
-
-        <!-- Botões de navegação -->
-        <div class="absolute top-1/2 -translate-y-1/2 right-0 flex flex-col gap-2 p-2 z-10">
-          <div class="swiper-button-prev-blog cursor-pointer bg-gray-700 hover:bg-gray-600 rounded-full p-2">
-            <i class="ph ph-arrow-left text-white"></i>
-          </div>
-          <div class="swiper-button-next-blog cursor-pointer bg-gray-700 hover:bg-gray-600 rounded-full p-2">
-            <i class="ph ph-arrow-right text-white"></i>
-          </div>
-        </div>
-
       </div>
+
+      <!-- Botões de navegação ao lado dos cartões -->
+      <div class="absolute right-0 top-1/2 translate-x-full -translate-y-1/2 flex flex-col gap-2 z-10">
+        <div class="swiper-button-prev-blog cursor-pointer bg-gray-700 hover:bg-gray-600 rounded-full p-2">
+          <i class="ph ph-arrow-left text-white"></i>
+        </div>
+        <div class="swiper-button-next-blog cursor-pointer bg-gray-700 hover:bg-gray-600 rounded-full p-2">
+          <i class="ph ph-arrow-right text-white"></i>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
-        
+    
 
 <!-- Impacto -->
     <section class="py-24 px-6 bg-gradient-to-b from-gray-900 via-gray-950 to-gray-900 text-gray-100 shadow-inner animate-fade-in" id="impacto">
@@ -728,6 +728,7 @@
     blogContainer.addEventListener('mouseleave', () => swiperBlog.autoplay.start());
   });
 </script>
+
 
 
   </body>
