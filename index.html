@@ -68,13 +68,15 @@
 
     <!-- Navegação -->
     <nav id="nav-menu" class="hidden flex-col space-y-2 text-base w-full mt-4 sm:mt-0 sm:w-auto text-center sm:flex sm:flex-row sm:space-y-0 sm:space-x-6 sm:justify-center">
-      <a href="#sobre" class="block py-1 sm:py-0 hover:text-cyan-400">Sobre</a>
-      <a href="#servicos" class="block py-1 sm:py-0 hover:text-cyan-400">Serviços</a>
-      <a href="#competencias" class="block py-1 sm:py-0 hover:text-cyan-400">Competências</a>
-      <a href="#impacto" class="block py-1 sm:py-0 hover:text-cyan-400">Impacto</a>
-      <a href="#valores" class="block py-1 sm:py-0 hover:text-cyan-400">Valores</a>
-      <a href="#contacto" class="block py-1 sm:py-0 hover:text-cyan-400">Contacto</a>
-    </nav>
+  <a href="#sobre" class="block py-1 sm:py-0 hover:text-cyan-400">Sobre</a>
+  <a href="#servicos" class="block py-1 sm:py-0 hover:text-cyan-400">Serviços</a>
+  <a href="#competencias" class="block py-1 sm:py-0 hover:text-cyan-400">Competências</a>
+   <a href="#blog" class="block py-1 sm:py-0 hover:text-cyan-400">Blog</a>
+  <a href="#impacto" class="block py-1 sm:py-0 hover:text-cyan-400">Impacto</a>
+  <a href="#valores" class="block py-1 sm:py-0 hover:text-cyan-400">Valores</a>
+<a href="#contacto" class="block py-1 sm:py-0 hover:text-cyan-400">Contacto</a>
+</nav>
+
   </div>
 </header>
 
@@ -113,7 +115,7 @@
 </p>
 
     <div class="flex flex-wrap justify-center gap-4">
-      <a href="#contacto" class="bg-cyan-500 hover:bg-cyan-400 text-white px-6 py-3 rounded-full font-medium transition shadow-lg">Pede uma proposta</a>
+      <a href="#contacto" class="bg-cyan-500 hover:bg-cyan-400 text-white px-6 py-3 rounded-full font-medium transition shadow-lg">Peça uma proposta</a>
       <a href="#servicos" class="bg-transparent border border-white hover:bg-white text-white hover:text-black px-6 py-3 rounded-full font-medium transition shadow-lg">Conhece os serviços</a>
     </div>
   </div>
@@ -196,21 +198,17 @@
         
 <!-- Accordion: Sistemas Operativos e Infraestruturas -->
 <div class="border border-gray-700 p-4 rounded-lg bg-gray-900 shadow-md transition-transform duration-300 w-full max-w-4xl mx-auto">
-  <button onclick="toggleAccordion('accordion-sistemas')" class="w-full text-left flex justify-between items-center text-white text-base font-semibold mb-2">
+  <button onclick="toggleAccordion('accordion-open')" class="w-full text-left flex justify-between items-center text-white text-base font-semibold mb-2">
     <span class="flex items-center gap-2">
-      <i class="ph ph-desktop text-cyan-400"></i> Sistemas Operativos e Infraestruturas
+      <i class="ph ph-code text-cyan-400"></i></i> Sistemas Operativos e Infraestruturas
     </span>
     <i id="accordion-icon-sistemas" class="ph ph-plus-circle text-cyan-400 text-xl"></i>
   </button>
-  <ul id="accordion-sistemas" class="hidden mt-3 text-base md:text-lg text-gray-300 leading-relaxed space-y-1.5 list-none">
-    <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Administração de sistemas Microsoft (Windows Server) e Linux</li>
-    <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Domínio de Active Directory e do ecossistema Windows Server (DNS, GPO, DHCP, WSUS, etc.)</li>
-    <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Gestão de redes informáticas e desenho de arquiteturas de rede</li>
-    <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Routing e switching, com conhecimento sólido de redes LAN/WAN</li>
-    <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Configuração de proxy reverso com Nginx Proxy Manager</li>
-    <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Alojamento e gestão de websites com CloudPanel</li>
-  </ul>
-</div>
+  <ul id="accordion-virtualizacao" class="hidden mt-3 text-base md:text-lg text-gray-300 leading-relaxed space-y-1.5 list-none">
+  <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Gestão e implementação de ambientes virtualizados, Hyper-V, vCenter</li>
+  <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Implementação e manutenção de clusters de alta disponibilidade</li>
+  <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Estratégias de backup e recuperação com Veeam Backup &amp; Replication</li>
+</ul>
 </div>
 </div>
 
@@ -222,12 +220,11 @@
     </span>
     <i id="accordion-icon-virtualizacao" class="ph ph-plus-circle text-cyan-400 text-xl"></i>
   </button>
-  <ul id="accordion-virtualizacao" class="hidden mt-3 text-base md:text-lg text-gray-300 leading-relaxed space-y-1.5 list-none">
-    <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Gestão e implementação de ambientes virtualizados, Hyper-V, vCenter</li>
-    <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Implementação e manutenção de clusters de alta disponibilidade</li>
-    <li class="before:content-['▸'] before:text-cyan-400 before:mr-2">Estratégias de backup e recuperação com Veeam Backup &amp; Replication</li>
+  <ul id="accordion-sistemas" class="hidden mt-3 text-base md:text-lg text-gray-300 leading-relaxed space-y-1.5 list-none">
+    <li>Gestão e implementação de ambientes virtualizados, Hyper-V, vCenter</li>
+    <li>Implementação e manutenção de clusters de alta disponibilidade</li>
+    <li>Estratégias de backup e recuperação com Veeam Backup &amp; Replication</li>
   </ul>
-</div>
 </div>
 
 <!-- Accordion: Ferramentas Open Source -->
@@ -318,6 +315,72 @@
 	  
 </div>
     </section>
+	
+<!-- Secção Blog & Notícias -->
+<section class="py-24 px-4 sm:px-6 bg-gray-950 text-gray-100 shadow-inner" id="blog">
+  <div class="max-w-6xl mx-auto">
+    <h3 class="text-4xl font-extrabold text-cyan-400 mb-12 text-center flex items-center justify-center gap-3">
+      <i class="ph ph-newspaper text-cyan-300 animate-bounce"></i> Blog & Notícias
+    </h3>
+
+    <!-- SLIDESHOW HORIZONTAL -->
+    <div class="relative group">
+      <div class="swiper blog-swiper">
+        <div class="swiper-wrapper">
+
+          <!-- Artigo 1 -->
+          <div class="swiper-slide bg-gray-900 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition flex flex-col justify-between h-full min-h-[220px]">
+            <div>
+              <h4 class="text-base sm:text-lg font-semibold text-white mb-2">Apache Guacamole: Acesso remoto sem VPN</h4>
+              <p class="text-gray-400 text-sm mb-4">Sabias que é possível aceder remotamente a computadores e servidores de forma segura, sem instalar qualquer software no cliente?</p>
+            </div>
+            <a href="https://www.linkedin.com/posts/davidjesus_opensource-linux-docker-activity-7297636596521066497-di7N" target="_blank" class="text-cyan-400 hover:underline text-sm font-medium mt-auto">Ver publicação no LinkedIn →</a>
+          </div>
+
+          <!-- Artigo 2 -->
+          <div class="swiper-slide bg-gray-900 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition flex flex-col justify-between h-full min-h-[220px]">
+            <div>
+              <h4 class="text-base sm:text-lg font-semibold text-white mb-2">CloudPanel: Alojamento moderno e simplificado</h4>
+              <p class="text-gray-400 text-sm mb-4">Descobre como alojamos e gerimos sites com eficiência e segurança, utilizando CloudPanel com Docker e Debian 12.</p>
+            </div>
+            <a href="https://www.linkedin.com/posts/davidjesus_cloudpanel-alojamentoweb-devops-activity-7305288254344355841-k2NX" target="_blank" class="text-cyan-400 hover:underline text-sm font-medium mt-auto">Ver publicação no LinkedIn →</a>
+          </div>
+
+          <!-- Artigo 3 -->
+          <div class="swiper-slide bg-gray-900 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition flex flex-col justify-between h-full min-h-[220px]">
+            <div>
+              <h4 class="text-base sm:text-lg font-semibold text-white mb-2">SIEM, XDR e SOC: Proteção ativa em ambientes modernos</h4>
+              <p class="text-gray-400 text-sm mb-4">Explora como estas ferramentas e serviços ajudam na deteção, resposta e prevenção de ciberameaças em tempo real.</p>
+            </div>
+            <a href="https://www.linkedin.com/posts/davidjesus_siem-xdr-soc-activity-7308096027050348545-1PIL" target="_blank" class="text-cyan-400 hover:underline text-sm font-medium mt-auto">Ver publicação no LinkedIn →</a>
+          </div>
+
+          <!-- Artigo 4 -->
+          <div class="swiper-slide bg-gray-900 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition flex flex-col justify-between h-full min-h-[220px]">
+            <div>
+              <h4 class="text-base sm:text-lg font-semibold text-white mb-2">Cibersegurança Exa: o poder dos Honeypots</h4>
+              <p class="text-gray-400 text-sm mb-4">Partilhei os dados recolhidos com o meu honeypot T-Pot e como esta abordagem ajuda a compreender ataques reais e reforçar a nossa postura de segurança.</p>
+            </div>
+            <a href="https://www.linkedin.com/posts/davidjesus_ciberseguranaexa-honeypots-tpot-activity-7310630045729906688-5APb" target="_blank" class="text-cyan-400 hover:underline text-sm font-medium mt-auto">Ver publicação no LinkedIn →</a>
+          </div>
+
+        </div>
+
+        <!-- Botões de navegação -->
+        <div class="absolute top-1/2 -translate-y-1/2 right-0 flex flex-col gap-2 p-2 z-10">
+          <div class="swiper-button-prev-blog cursor-pointer bg-gray-700 hover:bg-gray-600 rounded-full p-2">
+            <i class="ph ph-arrow-left text-white"></i>
+          </div>
+          <div class="swiper-button-next-blog cursor-pointer bg-gray-700 hover:bg-gray-600 rounded-full p-2">
+            <i class="ph ph-arrow-right text-white"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+	
 
     <!-- Impacto -->
     <section class="py-24 px-6 bg-gradient-to-b from-gray-900 via-gray-950 to-gray-900 text-gray-100 shadow-inner animate-fade-in" id="impacto">
@@ -501,7 +564,8 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    
+<!-- Footer -->
     <footer class="bg-gray-900 py-6 text-center">
       <p class="text-sm text-gray-400">&copy; 2025 Hunidas NextLayer IT — Todos os direitos reservados</p>
       <p class="text-sm text-gray-400">Email: <a href="mailto:corporate@hunidas.pt" class="underline hover:text-cyan-400">corporate@hunidas.pt</a></p>
@@ -603,6 +667,43 @@
   });
 </script>
 
+
+<!-- Swiper JS (incluir ao final da página) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiperBlog = new Swiper('.blog-swiper', {
+      direction: 'horizontal',
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next-blog',
+        prevEl: '.swiper-button-prev-blog',
+      },
+      slidesPerView: 1,
+      spaceBetween: 20,
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      }
+    });
+
+    const blogContainer = document.querySelector('.blog-swiper');
+    blogContainer.addEventListener('mouseenter', () => swiperBlog.autoplay.stop());
+    blogContainer.addEventListener('mouseleave', () => swiperBlog.autoplay.start());
+  });
+</script>
 
   </body>
 </html>
