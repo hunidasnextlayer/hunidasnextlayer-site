@@ -67,6 +67,21 @@
       filter: drop-shadow(0 0 5px rgba(72, 235, 255, 0.5));
     }
   </style>
+  
+  
+  <style>
+  /* Reduz o tamanho do botão flutuante Calendly */
+  .calendly-badge-widget {
+    transform: scale(0.85);
+    transform-origin: bottom right;
+    bottom: 12px !important; /* ajusta posição após escala */
+    right: 12px !important;
+  }
+</style>
+
+  
+  
+  
 </head>
   
   
@@ -665,15 +680,33 @@
     </footer>
 
 
-<!-- Botão "Voltar ao Topo" -->
+
+<!-- Botão "Voltar ao Topo" com mais afastamento do fundo -->
 <button
   id="backToTop"
-  class="hidden fixed bottom-6 right-6 bg-cyan-500 text-white p-3 rounded-full shadow-lg hover:bg-cyan-400 transition z-50 animate-bounce"
+  class="hidden fixed bottom-24 right-6 bg-cyan-500 text-white p-3 rounded-full shadow-lg hover:bg-cyan-400 transition z-50 animate-bounce"
   aria-label="Voltar ao topo"
 >
   <i class="ph ph-arrow-up text-xl"></i>
 </button>
 
+
+
+<!-- Calendly Pop-up Widget - Agendar reunião rápida -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">
+  window.addEventListener('load', function() {
+    Calendly.initBadgeWidget({
+      url: 'https://calendly.com/hunidasnextlayer',
+      text: 'Agendar Reunião',
+      color: '#06b6d4', // Cor ciano
+      textColor: '#ffffff',
+      branding: false
+    });
+  });
+</script>
+<!-- Calendly Pop-up Widget - Fim -->
 
 
 	 <script>
@@ -797,6 +830,33 @@
     blogContainer.addEventListener('mouseleave', () => swiperBlog.autoplay.start());
   });
 </script>
+
+
+<!-- Calendly Pop-up Widget - Agendar reunião rápida -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+<style>
+  .calendly-badge-widget {
+    transform: scale(0.85);
+    transform-origin: bottom right;
+    bottom: 12px !important;
+    right: 12px !important;
+  }
+</style>
+
+<script type="text/javascript">
+  window.addEventListener('load', function() {
+    Calendly.initBadgeWidget({
+      url: 'https://calendly.com/hunidasnextlayer',
+      text: 'Agendar Reunião',
+      color: '#06b6d4',
+      textColor: '#ffffff',
+      branding: false
+    });
+  });
+</script>
+<!-- Calendly Pop-up Widget - Fim -->
 
 
   </body>
