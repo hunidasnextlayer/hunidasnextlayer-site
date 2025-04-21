@@ -692,32 +692,42 @@
 
 
 
-<!-- Calendly Pop-up Widget - Agendar reunião rápida -->
+<!-- Calendly badge original (visível só em desktop) -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">
-  window.addEventListener('load', function() {
-    Calendly.initBadgeWidget({
-      url: 'https://calendly.com/hunidasnextlayer',
-      text: 'Agendar Reunião',
-      color: '#06b6d4', // Cor ciano
-      textColor: '#ffffff',
-      branding: false
-    });
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+<style>
+  .calendly-badge-widget {
+    transform: scale(0.9);
+    transform-origin: bottom right;
+    bottom: 16px !important;
+    right: 16px !important;
+  }
+</style>
+
+<script>
+  window.addEventListener('load', function () {
+    if (window.innerWidth >= 640) {
+      Calendly.initBadgeWidget({
+        url: 'https://calendly.com/hunidasnextlayer',
+        text: 'Agendar reunião rápida',
+        color: '#06b6d4',
+        textColor: '#ffffff',
+        branding: false
+      });
+    }
   });
 </script>
-<!-- Calendly Pop-up Widget - Fim -->
 
+<!-- Botão personalizado para mobile -->
+<button
+  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/hunidasnextlayer'}); return false;"
+  class="fixed bottom-5 right-5 z-50 bg-cyan-500 text-white p-3 rounded-full shadow-lg hover:bg-cyan-400 transition block sm:hidden"
+  aria-label="Agendar reunião rápida"
+>
+  <i class="ph ph-calendar text-xl"></i>
+</button>
 
-	 <script>
-  document.querySelectorAll('#nav-menu a').forEach(link => {
-    link.addEventListener('click', () => {
-      if (window.innerWidth < 640) {
-        document.getElementById('nav-menu').classList.add('hidden');
-      }
-    });
-  });
-</script>
 
 
 
@@ -857,6 +867,7 @@
   });
 </script>
 <!-- Calendly Pop-up Widget - Fim -->
+
 
 
   </body>
