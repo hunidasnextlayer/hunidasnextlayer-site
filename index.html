@@ -586,15 +586,38 @@
       </div>
     </section>
 
-    <section class="py-20 px-6 max-w-5xl mx-auto text-center" id="contacto">
-      <div class="px-4">
-        <h3 class="text-3xl font-bold mb-6 text-cyan-400 flex items-center justify-center gap-2">
-          <i class="ph ph-envelope-simple text-cyan-400"></i> Fala connosco
-        </h3>
-        <p class="mb-6">Pronto para elevar a tua infraestrutura ao próximo nível? Envia-nos um Email.</p>
-        <a href="mailto:corporate@hunidas.pt" class="bg-cyan-500 hover:bg-cyan-400 text-white px-8 py-4 rounded-full font-medium transition">Enviar Mensagem</a>
-      </div>
-    </section>
+	
+<section class="py-20 px-6 max-w-5xl mx-auto text-center" id="contacto">
+  <div class="px-4">
+    <h3 class="text-3xl font-bold mb-6 text-cyan-400 flex items-center justify-center gap-2">
+      <i class="ph ph-envelope-simple text-cyan-400"></i> Fala connosco
+    </h3>
+    <p class="mb-6">Pronto para elevar a tua infraestrutura ao próximo nível? Envia-nos um email ou agenda uma reunião connosco.</p>
+
+    <!-- Botões -->
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+      <a href="mailto:corporate@hunidas.pt"
+         class="bg-cyan-500 hover:bg-cyan-400 text-white px-8 py-4 rounded-full font-medium transition">
+         Enviar Email
+      </a>
+
+      <button onclick="document.getElementById('calendly-widget').classList.toggle('hidden')"
+              class="bg-gray-800 hover:bg-gray-700 text-white px-8 py-4 rounded-full font-medium transition">
+        Agendar Reunião
+      </button>
+    </div>
+
+    <!-- Calendly widget oculto -->
+    <div id="calendly-widget" class="hidden calendly-inline-widget max-w-4xl mx-auto"
+         data-url="https://calendly.com/jesusdavidgabriel/new-meeting"
+         style="min-width:320px;height:700px;">
+    </div>
+  </div>
+
+  <!-- Script do Calendly -->
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</section>
+	
 
     
 <!-- Footer -->
