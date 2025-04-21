@@ -586,8 +586,8 @@
       </div>
     </section>
 
-	
-<section class="py-20 px-6 max-w-5xl mx-auto text-center" id="contacto">
+
+<section class="py-20 px-6 max-w-7xl mx-auto text-center" id="contacto">
   <div class="px-4">
     <h3 class="text-3xl font-bold mb-6 text-cyan-400 flex items-center justify-center gap-2">
       <i class="ph ph-envelope-simple text-cyan-400"></i> Fala connosco
@@ -601,23 +601,61 @@
          Enviar Email
       </a>
 
-      <button onclick="document.getElementById('calendly-widget').classList.toggle('hidden')"
+      <button id="toggleCalendlyBtn"
+              onclick="toggleCalendly()"
               class="bg-gray-800 hover:bg-gray-700 text-white px-8 py-4 rounded-full font-medium transition">
         Agendar Reunião
       </button>
     </div>
 
     <!-- Calendly widget oculto -->
-    <div id="calendly-widget" class="hidden calendly-inline-widget max-w-4xl mx-auto"
-         data-url="https://calendly.com/jesusdavidgabriel/new-meeting"
-         style="min-width:320px;height:700px;">
+    <div id="calendly-widget"
+         class="hidden relative border-2 border-cyan-400 rounded-2xl shadow-2xl mt-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 opacity-0 transition-opacity duration-500">
+
+      <!-- Botão de fechar flutuante -->
+      <button onclick="toggleCalendly()" class="absolute top-4 right-4 text-cyan-400 hover:text-red-500 text-2xl font-bold transition z-10">
+        ✕
+      </button>
+
+      <!-- Calendly Iframe -->
+      <div class="w-full" style="height: auto; min-height: 650px;">
+        <iframe
+          src="https://calendly.com/jesusdavidgabriel/new-meeting?primary_color=06b6d4"
+          class="w-full"
+          height="750"
+          frameborder="0"
+          scrolling="no"
+          style="min-width: 320px;"
+          allowfullscreen>
+        </iframe>
+      </div>
     </div>
   </div>
 
-  <!-- Script do Calendly -->
-  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <!-- Script para alternar visibilidade e scroll -->
+  <script>
+    function toggleCalendly() {
+      const widget = document.getElementById('calendly-widget');
+      const button = document.getElementById('toggleCalendlyBtn');
+      const isHidden = widget.classList.contains('hidden');
+
+      if (isHidden) {
+        widget.classList.remove('hidden');
+        setTimeout(() => widget.classList.add('opacity-100'), 10); // fade-in
+        widget.classList.remove('opacity-0');
+        button.textContent = 'Fechar Calendário';
+        setTimeout(() => {
+          widget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 300);
+      } else {
+        widget.classList.remove('opacity-100');
+        widget.classList.add('opacity-0');
+        button.textContent = 'Agendar Reunião';
+        setTimeout(() => widget.classList.add('hidden'), 500); // fade-out
+      }
+    }
+  </script>
 </section>
-	
 
     
 <!-- Footer -->
@@ -759,7 +797,6 @@
     blogContainer.addEventListener('mouseleave', () => swiperBlog.autoplay.start());
   });
 </script>
-
 
 
   </body>
