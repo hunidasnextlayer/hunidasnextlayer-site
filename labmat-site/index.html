@@ -132,6 +132,7 @@
       <nav id="nav-menu" class="hidden flex-col gap-2 absolute top-full left-0 w-full bg-white shadow-md px-6 py-4 sm:static sm:flex sm:flex-row sm:gap-8 sm:shadow-none sm:p-0 sm:w-auto">
         <a href="#servicos"  class="text-sm font-medium text-gray-600 hover:text-navy-700 transition py-2 sm:py-0">Serviços</a>
         <a href="#sobre"     class="text-sm font-medium text-gray-600 hover:text-navy-700 transition py-2 sm:py-0">Sobre</a>
+        <a href="#galeria"   class="text-sm font-medium text-gray-600 hover:text-navy-700 transition py-2 sm:py-0">Galeria</a>
         <a href="#vantagens" class="text-sm font-medium text-gray-600 hover:text-navy-700 transition py-2 sm:py-0">Porquê Labmat</a>
         <a href="#contacto"  class="text-sm font-medium bg-navy-800 hover:bg-navy-700 text-white px-4 py-2 rounded-lg transition text-center">Contacto</a>
       </nav>
@@ -273,16 +274,13 @@
   <section class="py-16 md:py-24 px-5 sm:px-6 bg-white" id="sobre">
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 md:gap-16 items-center">
 
-      <!-- Visual block -->
+      <!-- Photo -->
       <div class="relative mx-auto w-full max-w-xs sm:max-w-sm">
-        <div class="bg-navy-800 rounded-3xl aspect-square flex items-center justify-center overflow-hidden">
-          <div class="absolute inset-0 bg-gradient-to-br from-navy-700 to-navy-950 rounded-3xl"></div>
-          <i class="ph ph-tooth text-white/10 text-[10rem] sm:text-[14rem] md:text-[18rem] absolute"></i>
-          <div class="relative z-10 text-center px-8 sm:px-10">
-            <i class="ph ph-medal text-gold-400 text-4xl sm:text-5xl mb-3 sm:mb-4"></i>
-            <p class="text-white font-bold text-lg sm:text-xl leading-snug">Qualidade que se<br/>vê e que se sente</p>
-          </div>
-        </div>
+        <img
+          src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=800&q=80"
+          alt="Técnico de laboratório dentário a trabalhar"
+          class="rounded-3xl w-full object-cover aspect-square shadow-lg"
+        />
         <!-- Floating badge -->
         <div class="absolute -bottom-4 right-2 sm:-right-4 bg-white rounded-2xl shadow-xl px-4 py-3 sm:px-5 sm:py-4 flex items-center gap-3 border border-gray-100">
           <i class="ph ph-check-circle text-green-500 text-xl sm:text-2xl"></i>
@@ -326,6 +324,69 @@
         </ul>
       </div>
 
+    </div>
+  </section>
+
+
+  <!-- ===== GALERIA ===== -->
+  <section class="py-16 md:py-24 px-5 sm:px-6 bg-gray-50" id="galeria">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-10 md:mb-14 text-center">
+        <p class="text-xs sm:text-sm font-semibold text-navy-600 uppercase tracking-widest mb-3">O nosso trabalho</p>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-navy-900 mb-4">Galeria</h2>
+        <div class="section-divider mx-auto"></div>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+
+        <div class="relative overflow-hidden rounded-2xl group aspect-square">
+          <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=600&q=80"
+            alt="Coroas em zircónia" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+            <span class="text-white text-sm font-semibold">Coroas em Zircónia</span>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded-2xl group aspect-square">
+          <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80"
+            alt="Trabalho de cerâmica" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+            <span class="text-white text-sm font-semibold">Trabalhos de Cerâmica</span>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded-2xl group aspect-square">
+          <img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=600&q=80"
+            alt="Tecnologia CAD/CAM" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+            <span class="text-white text-sm font-semibold">Tecnologia CAD/CAM</span>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded-2xl group aspect-square">
+          <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=600&q=80"
+            alt="Próteses sobre implante" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+            <span class="text-white text-sm font-semibold">Próteses sobre Implante</span>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded-2xl group aspect-square">
+          <img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322?auto=format&fit=crop&w=600&q=80"
+            alt="Facetas de cerâmica" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+            <span class="text-white text-sm font-semibold">Facetas de Cerâmica</span>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded-2xl group aspect-square">
+          <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80"
+            alt="Equipamento de laboratório" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+            <span class="text-white text-sm font-semibold">Equipamento de Laboratório</span>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
