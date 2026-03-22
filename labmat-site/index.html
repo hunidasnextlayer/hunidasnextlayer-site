@@ -88,7 +88,6 @@
     .delay-300 { animation-delay: 0.3s; }
     .delay-400 { animation-delay: 0.4s; }
 
-    /* Divider */
     .section-divider {
       width: 48px;
       height: 4px;
@@ -96,13 +95,14 @@
       border-radius: 2px;
     }
 
-    /* Card hover lift */
     .card-hover {
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
-    .card-hover:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 16px 40px rgba(12, 45, 82, 0.12);
+    @media (hover: hover) {
+      .card-hover:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 40px rgba(12, 45, 82, 0.12);
+      }
     }
   </style>
 </head>
@@ -111,29 +111,29 @@
 
   <!-- ===== HEADER ===== -->
   <header class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 border-b border-gray-100">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="max-w-6xl mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
 
       <!-- Logo -->
-      <div class="flex items-center gap-3">
-        <div class="w-9 h-9 bg-navy-800 rounded-lg flex items-center justify-center">
-          <i class="ph ph-tooth text-white text-xl"></i>
+      <div class="flex items-center gap-2 sm:gap-3">
+        <div class="w-8 h-8 sm:w-9 sm:h-9 bg-navy-800 rounded-lg flex items-center justify-center">
+          <i class="ph ph-tooth text-white text-lg sm:text-xl"></i>
         </div>
-        <span class="text-xl font-bold text-navy-900 tracking-tight">
+        <span class="text-lg sm:text-xl font-bold text-navy-900 tracking-tight">
           Lab<span class="text-navy-600">mat</span>
         </span>
       </div>
 
       <!-- Menu toggle (mobile) -->
-      <button id="menu-toggle" class="sm:hidden text-navy-800 focus:outline-none" aria-label="Abrir menu">
+      <button id="menu-toggle" class="sm:hidden text-navy-800 focus:outline-none p-1" aria-label="Abrir menu">
         <i class="ph ph-list text-2xl"></i>
       </button>
 
       <!-- Nav -->
-      <nav id="nav-menu" class="hidden flex-col gap-3 absolute top-full left-0 w-full bg-white shadow-md px-6 py-5 sm:static sm:flex sm:flex-row sm:gap-8 sm:shadow-none sm:p-0 sm:w-auto">
-        <a href="#servicos"   class="text-sm font-medium text-gray-600 hover:text-navy-700 transition">Serviços</a>
-        <a href="#sobre"      class="text-sm font-medium text-gray-600 hover:text-navy-700 transition">Sobre</a>
-        <a href="#vantagens"  class="text-sm font-medium text-gray-600 hover:text-navy-700 transition">Porquê Labmat</a>
-        <a href="#contacto"   class="text-sm font-medium bg-navy-800 hover:bg-navy-700 text-white px-4 py-2 rounded-lg transition">Contacto</a>
+      <nav id="nav-menu" class="hidden flex-col gap-2 absolute top-full left-0 w-full bg-white shadow-md px-6 py-4 sm:static sm:flex sm:flex-row sm:gap-8 sm:shadow-none sm:p-0 sm:w-auto">
+        <a href="#servicos"  class="text-sm font-medium text-gray-600 hover:text-navy-700 transition py-2 sm:py-0">Serviços</a>
+        <a href="#sobre"     class="text-sm font-medium text-gray-600 hover:text-navy-700 transition py-2 sm:py-0">Sobre</a>
+        <a href="#vantagens" class="text-sm font-medium text-gray-600 hover:text-navy-700 transition py-2 sm:py-0">Porquê Labmat</a>
+        <a href="#contacto"  class="text-sm font-medium bg-navy-800 hover:bg-navy-700 text-white px-4 py-2 rounded-lg transition text-center">Contacto</a>
       </nav>
     </div>
   </header>
@@ -156,25 +156,25 @@
 
 
   <!-- ===== HERO ===== -->
-  <section class="hero-bg tooth-pattern min-h-screen flex items-center justify-center text-center px-6 pt-20" id="hero">
-    <div class="max-w-3xl mx-auto py-20">
-      <span class="inline-block bg-white/10 text-white/80 text-sm font-medium px-4 py-1.5 rounded-full mb-6 animate-fade-in-up">
+  <section class="hero-bg min-h-screen flex items-center justify-center text-center px-5 pt-16" id="hero">
+    <div class="max-w-3xl mx-auto py-14 sm:py-20">
+      <span class="inline-block bg-white/10 text-white/80 text-xs sm:text-sm font-medium px-4 py-1.5 rounded-full mb-5 animate-fade-in-up">
         Laboratório de Próteses Dentárias
       </span>
-      <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6 animate-fade-in-up delay-100">
+      <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white leading-tight mb-5 animate-fade-in-up delay-100">
         O laboratório em que<br/>
         <span class="text-gold-400">os dentistas confiam.</span>
       </h1>
-      <p class="text-lg md:text-xl text-white/75 mb-10 leading-relaxed animate-fade-in-up delay-200">
+      <p class="text-base sm:text-lg md:text-xl text-white/75 mb-8 leading-relaxed animate-fade-in-up delay-200">
         Trabalhamos lado a lado com dentistas para produzir próteses, implantes e trabalhos de cerâmica com rigor, qualidade e dentro do prazo.
       </p>
-      <div class="flex flex-wrap justify-center gap-4 animate-fade-in-up delay-300">
+      <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 animate-fade-in-up delay-300">
         <a href="#contacto"
-           class="bg-gold-400 hover:bg-gold-500 text-navy-950 font-semibold px-8 py-3.5 rounded-full transition shadow-lg">
+           class="bg-gold-400 hover:bg-gold-500 text-navy-950 font-semibold px-8 py-3.5 rounded-full transition shadow-lg text-center">
           Pede um orçamento
         </a>
         <a href="#servicos"
-           class="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-medium px-8 py-3.5 rounded-full transition">
+           class="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-medium px-8 py-3.5 rounded-full transition text-center">
           Ver serviços
         </a>
       </div>
@@ -183,90 +183,84 @@
 
 
   <!-- ===== STATS BAR ===== -->
-  <section class="bg-navy-950 text-white py-10 px-6">
-    <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+  <section class="bg-navy-950 text-white py-8 md:py-10 px-6">
+    <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center">
       <div>
-        <p class="text-3xl font-extrabold text-gold-400">+15</p>
-        <p class="text-sm text-white/60 mt-1">Anos de experiência</p>
+        <p class="text-2xl sm:text-3xl font-extrabold text-gold-400">+15</p>
+        <p class="text-xs sm:text-sm text-white/60 mt-1">Anos de experiência</p>
       </div>
       <div>
-        <p class="text-3xl font-extrabold text-gold-400">+200</p>
-        <p class="text-sm text-white/60 mt-1">Dentistas parceiros</p>
+        <p class="text-2xl sm:text-3xl font-extrabold text-gold-400">+200</p>
+        <p class="text-xs sm:text-sm text-white/60 mt-1">Dentistas parceiros</p>
       </div>
       <div>
-        <p class="text-3xl font-extrabold text-gold-400">98%</p>
-        <p class="text-sm text-white/60 mt-1">Taxa de satisfação</p>
+        <p class="text-2xl sm:text-3xl font-extrabold text-gold-400">98%</p>
+        <p class="text-xs sm:text-sm text-white/60 mt-1">Taxa de satisfação</p>
       </div>
       <div>
-        <p class="text-3xl font-extrabold text-gold-400">48h</p>
-        <p class="text-sm text-white/60 mt-1">Prazo de entrega médio</p>
+        <p class="text-2xl sm:text-3xl font-extrabold text-gold-400">48h</p>
+        <p class="text-xs sm:text-sm text-white/60 mt-1">Prazo de entrega médio</p>
       </div>
     </div>
   </section>
 
 
   <!-- ===== SERVIÇOS ===== -->
-  <section class="py-24 px-6 bg-gray-50" id="servicos">
+  <section class="py-16 md:py-24 px-5 sm:px-6 bg-gray-50" id="servicos">
     <div class="max-w-6xl mx-auto">
-      <div class="mb-14 text-center">
-        <p class="text-sm font-semibold text-navy-600 uppercase tracking-widest mb-3">O que fazemos</p>
-        <h2 class="text-3xl md:text-4xl font-extrabold text-navy-900 mb-4">Serviços de laboratório</h2>
+      <div class="mb-10 md:mb-14 text-center">
+        <p class="text-xs sm:text-sm font-semibold text-navy-600 uppercase tracking-widest mb-3">O que fazemos</p>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-navy-900 mb-4">Serviços de laboratório</h2>
         <div class="section-divider mx-auto"></div>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
 
-        <!-- Coroas e Pontes -->
-        <div class="card-hover bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
-          <div class="w-12 h-12 bg-navy-50 rounded-xl flex items-center justify-center mb-5">
-            <i class="ph ph-crown-simple text-navy-700 text-2xl"></i>
+        <div class="card-hover bg-white rounded-2xl p-5 sm:p-7 border border-gray-100 shadow-sm">
+          <div class="w-11 h-11 sm:w-12 sm:h-12 bg-navy-50 rounded-xl flex items-center justify-center mb-4 sm:mb-5">
+            <i class="ph ph-crown-simple text-navy-700 text-xl sm:text-2xl"></i>
           </div>
-          <h3 class="text-lg font-bold text-navy-900 mb-2">Coroas e Pontes</h3>
+          <h3 class="text-base sm:text-lg font-bold text-navy-900 mb-2">Coroas e Pontes</h3>
           <p class="text-gray-500 text-sm leading-relaxed">Coroas individuais e pontes fixas em zircónia, metal-cerâmica, disilicato de lítio e resina. Estética e durabilidade garantidas.</p>
         </div>
 
-        <!-- Implantes -->
-        <div class="card-hover bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
-          <div class="w-12 h-12 bg-navy-50 rounded-xl flex items-center justify-center mb-5">
-            <i class="ph ph-wrench text-navy-700 text-2xl"></i>
+        <div class="card-hover bg-white rounded-2xl p-5 sm:p-7 border border-gray-100 shadow-sm">
+          <div class="w-11 h-11 sm:w-12 sm:h-12 bg-navy-50 rounded-xl flex items-center justify-center mb-4 sm:mb-5">
+            <i class="ph ph-wrench text-navy-700 text-xl sm:text-2xl"></i>
           </div>
-          <h3 class="text-lg font-bold text-navy-900 mb-2">Próteses sobre Implante</h3>
+          <h3 class="text-base sm:text-lg font-bold text-navy-900 mb-2">Próteses sobre Implante</h3>
           <p class="text-gray-500 text-sm leading-relaxed">Coroas unitárias, barras, próteses híbridas e overdentures. Compatíveis com os principais sistemas de implantes do mercado.</p>
         </div>
 
-        <!-- Próteses Removíveis -->
-        <div class="card-hover bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
-          <div class="w-12 h-12 bg-navy-50 rounded-xl flex items-center justify-center mb-5">
-            <i class="ph ph-squares-four text-navy-700 text-2xl"></i>
+        <div class="card-hover bg-white rounded-2xl p-5 sm:p-7 border border-gray-100 shadow-sm">
+          <div class="w-11 h-11 sm:w-12 sm:h-12 bg-navy-50 rounded-xl flex items-center justify-center mb-4 sm:mb-5">
+            <i class="ph ph-squares-four text-navy-700 text-xl sm:text-2xl"></i>
           </div>
-          <h3 class="text-lg font-bold text-navy-900 mb-2">Próteses Removíveis</h3>
+          <h3 class="text-base sm:text-lg font-bold text-navy-900 mb-2">Próteses Removíveis</h3>
           <p class="text-gray-500 text-sm leading-relaxed">Próteses totais e parciais acrílicas ou em esqueleto metálico. Conforto e funcionalidade para cada paciente.</p>
         </div>
 
-        <!-- Facetas -->
-        <div class="card-hover bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
-          <div class="w-12 h-12 bg-navy-50 rounded-xl flex items-center justify-center mb-5">
-            <i class="ph ph-sparkle text-navy-700 text-2xl"></i>
+        <div class="card-hover bg-white rounded-2xl p-5 sm:p-7 border border-gray-100 shadow-sm">
+          <div class="w-11 h-11 sm:w-12 sm:h-12 bg-navy-50 rounded-xl flex items-center justify-center mb-4 sm:mb-5">
+            <i class="ph ph-sparkle text-navy-700 text-xl sm:text-2xl"></i>
           </div>
-          <h3 class="text-lg font-bold text-navy-900 mb-2">Facetas e Estética</h3>
+          <h3 class="text-base sm:text-lg font-bold text-navy-900 mb-2">Facetas e Estética</h3>
           <p class="text-gray-500 text-sm leading-relaxed">Facetas em cerâmica e disilicato de lítio para reabilitações estéticas exigentes. Reprodução fiel da cor e translucidez natural.</p>
         </div>
 
-        <!-- CAD/CAM -->
-        <div class="card-hover bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
-          <div class="w-12 h-12 bg-navy-50 rounded-xl flex items-center justify-center mb-5">
-            <i class="ph ph-scan text-navy-700 text-2xl"></i>
+        <div class="card-hover bg-white rounded-2xl p-5 sm:p-7 border border-gray-100 shadow-sm">
+          <div class="w-11 h-11 sm:w-12 sm:h-12 bg-navy-50 rounded-xl flex items-center justify-center mb-4 sm:mb-5">
+            <i class="ph ph-scan text-navy-700 text-xl sm:text-2xl"></i>
           </div>
-          <h3 class="text-lg font-bold text-navy-900 mb-2">Tecnologia CAD/CAM</h3>
+          <h3 class="text-base sm:text-lg font-bold text-navy-900 mb-2">Tecnologia CAD/CAM</h3>
           <p class="text-gray-500 text-sm leading-relaxed">Fresagem digital de alta precisão em zircónia e PMMA. Compatível com ficheiros STL de qualquer scanner intraoral.</p>
         </div>
 
-        <!-- Contenção -->
-        <div class="card-hover bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
-          <div class="w-12 h-12 bg-navy-50 rounded-xl flex items-center justify-center mb-5">
-            <i class="ph ph-shield-check text-navy-700 text-2xl"></i>
+        <div class="card-hover bg-white rounded-2xl p-5 sm:p-7 border border-gray-100 shadow-sm">
+          <div class="w-11 h-11 sm:w-12 sm:h-12 bg-navy-50 rounded-xl flex items-center justify-center mb-4 sm:mb-5">
+            <i class="ph ph-shield-check text-navy-700 text-xl sm:text-2xl"></i>
           </div>
-          <h3 class="text-lg font-bold text-navy-900 mb-2">Aparelhos e Contenção</h3>
+          <h3 class="text-base sm:text-lg font-bold text-navy-900 mb-2">Aparelhos e Contenção</h3>
           <p class="text-gray-500 text-sm leading-relaxed">Goteiras oclusais, aparelhos de contenção, férias e outros trabalhos complementares para o consultório.</p>
         </div>
 
@@ -276,22 +270,22 @@
 
 
   <!-- ===== SOBRE ===== -->
-  <section class="py-24 px-6 bg-white" id="sobre">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+  <section class="py-16 md:py-24 px-5 sm:px-6 bg-white" id="sobre">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 md:gap-16 items-center">
 
       <!-- Visual block -->
-      <div class="relative">
-        <div class="bg-navy-800 rounded-3xl aspect-square max-w-sm mx-auto flex items-center justify-center overflow-hidden">
+      <div class="relative mx-auto w-full max-w-xs sm:max-w-sm">
+        <div class="bg-navy-800 rounded-3xl aspect-square flex items-center justify-center overflow-hidden">
           <div class="absolute inset-0 bg-gradient-to-br from-navy-700 to-navy-950 rounded-3xl"></div>
-          <i class="ph ph-tooth text-white/10 text-[18rem] absolute"></i>
-          <div class="relative z-10 text-center px-10">
-            <i class="ph ph-medal text-gold-400 text-5xl mb-4"></i>
-            <p class="text-white font-bold text-xl leading-snug">Qualidade que se<br/>vê e que se sente</p>
+          <i class="ph ph-tooth text-white/10 text-[10rem] sm:text-[14rem] md:text-[18rem] absolute"></i>
+          <div class="relative z-10 text-center px-8 sm:px-10">
+            <i class="ph ph-medal text-gold-400 text-4xl sm:text-5xl mb-3 sm:mb-4"></i>
+            <p class="text-white font-bold text-lg sm:text-xl leading-snug">Qualidade que se<br/>vê e que se sente</p>
           </div>
         </div>
         <!-- Floating badge -->
-        <div class="absolute -bottom-4 -right-4 md:right-8 bg-white rounded-2xl shadow-xl px-5 py-4 flex items-center gap-3 border border-gray-100">
-          <i class="ph ph-check-circle text-green-500 text-2xl"></i>
+        <div class="absolute -bottom-4 right-2 sm:-right-4 bg-white rounded-2xl shadow-xl px-4 py-3 sm:px-5 sm:py-4 flex items-center gap-3 border border-gray-100">
+          <i class="ph ph-check-circle text-green-500 text-xl sm:text-2xl"></i>
           <div>
             <p class="text-xs text-gray-400 leading-none">Certificado</p>
             <p class="text-sm font-bold text-navy-900">ISO 13485</p>
@@ -300,33 +294,33 @@
       </div>
 
       <!-- Text -->
-      <div>
-        <p class="text-sm font-semibold text-navy-600 uppercase tracking-widest mb-3">Sobre o Labmat</p>
-        <h2 class="text-3xl md:text-4xl font-extrabold text-navy-900 mb-5 leading-tight">
+      <div class="mt-8 md:mt-0">
+        <p class="text-xs sm:text-sm font-semibold text-navy-600 uppercase tracking-widest mb-3">Sobre o Labmat</p>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-navy-900 mb-5 leading-tight">
           Um laboratório ao serviço dos dentistas
         </h2>
-        <div class="section-divider mb-7"></div>
-        <p class="text-gray-500 leading-relaxed mb-5">
+        <div class="section-divider mb-6 sm:mb-7"></div>
+        <p class="text-gray-500 leading-relaxed mb-5 text-sm sm:text-base">
           O Labmat é um laboratório de próteses dentárias especializado em dar resposta rápida e de qualidade às necessidades dos dentistas. Trabalhamos com materiais de última geração e tecnologia digital para garantir que cada trabalho chega ao consultório pronto a colocar.
         </p>
-        <p class="text-gray-500 leading-relaxed mb-8">
+        <p class="text-gray-500 leading-relaxed mb-7 text-sm sm:text-base">
           A nossa equipa é formada por técnicos experientes com formação contínua, que entendem que o rigor na prótese é tão importante como a clínica. A relação com cada dentista é personalizada, direta e assente na confiança.
         </p>
         <ul class="space-y-3">
           <li class="flex items-center gap-3 text-gray-700 text-sm">
-            <i class="ph ph-check-circle text-navy-600 text-xl flex-shrink-0"></i>
+            <i class="ph ph-check-circle text-navy-600 text-lg sm:text-xl flex-shrink-0"></i>
             Equipa técnica especializada e em formação contínua
           </li>
           <li class="flex items-center gap-3 text-gray-700 text-sm">
-            <i class="ph ph-check-circle text-navy-600 text-xl flex-shrink-0"></i>
+            <i class="ph ph-check-circle text-navy-600 text-lg sm:text-xl flex-shrink-0"></i>
             Materiais certificados e de origem rastreável
           </li>
           <li class="flex items-center gap-3 text-gray-700 text-sm">
-            <i class="ph ph-check-circle text-navy-600 text-xl flex-shrink-0"></i>
+            <i class="ph ph-check-circle text-navy-600 text-lg sm:text-xl flex-shrink-0"></i>
             Comunicação direta entre técnico e dentista
           </li>
           <li class="flex items-center gap-3 text-gray-700 text-sm">
-            <i class="ph ph-check-circle text-navy-600 text-xl flex-shrink-0"></i>
+            <i class="ph ph-check-circle text-navy-600 text-lg sm:text-xl flex-shrink-0"></i>
             Prazos de entrega cumpridos e previsíveis
           </li>
         </ul>
@@ -337,37 +331,37 @@
 
 
   <!-- ===== VANTAGENS ===== -->
-  <section class="py-24 px-6 bg-navy-950 text-white" id="vantagens">
+  <section class="py-16 md:py-24 px-5 sm:px-6 bg-navy-950 text-white" id="vantagens">
     <div class="max-w-6xl mx-auto">
 
-      <div class="mb-14 text-center">
-        <p class="text-sm font-semibold text-gold-400 uppercase tracking-widest mb-3">Porquê Labmat</p>
-        <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">O que nos distingue</h2>
+      <div class="mb-10 md:mb-14 text-center">
+        <p class="text-xs sm:text-sm font-semibold text-gold-400 uppercase tracking-widest mb-3">Porquê Labmat</p>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-4">O que nos distingue</h2>
         <div class="section-divider mx-auto"></div>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
 
-        <div class="card-hover bg-white/5 border border-white/10 rounded-2xl p-7 text-center hover:bg-white/10 transition">
-          <i class="ph ph-clock text-gold-400 text-4xl mb-4"></i>
+        <div class="card-hover bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-7 text-center">
+          <i class="ph ph-clock text-gold-400 text-3xl sm:text-4xl mb-3 sm:mb-4"></i>
           <h3 class="font-bold text-white mb-2">Entrega rápida</h3>
           <p class="text-white/55 text-sm leading-relaxed">Prazo médio de 48 horas nos trabalhos standard. Urgências tratadas com prioridade.</p>
         </div>
 
-        <div class="card-hover bg-white/5 border border-white/10 rounded-2xl p-7 text-center hover:bg-white/10 transition">
-          <i class="ph ph-magnifying-glass text-gold-400 text-4xl mb-4"></i>
+        <div class="card-hover bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-7 text-center">
+          <i class="ph ph-magnifying-glass text-gold-400 text-3xl sm:text-4xl mb-3 sm:mb-4"></i>
           <h3 class="font-bold text-white mb-2">Controlo de qualidade</h3>
           <p class="text-white/55 text-sm leading-relaxed">Cada trabalho passa por verificação rigorosa antes de sair do laboratório.</p>
         </div>
 
-        <div class="card-hover bg-white/5 border border-white/10 rounded-2xl p-7 text-center hover:bg-white/10 transition">
-          <i class="ph ph-chat-circle-text text-gold-400 text-4xl mb-4"></i>
+        <div class="card-hover bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-7 text-center">
+          <i class="ph ph-chat-circle-text text-gold-400 text-3xl sm:text-4xl mb-3 sm:mb-4"></i>
           <h3 class="font-bold text-white mb-2">Suporte dedicado</h3>
           <p class="text-white/55 text-sm leading-relaxed">Linha direta com o técnico responsável. Sem intermediários, sem ruído na comunicação.</p>
         </div>
 
-        <div class="card-hover bg-white/5 border border-white/10 rounded-2xl p-7 text-center hover:bg-white/10 transition">
-          <i class="ph ph-cpu text-gold-400 text-4xl mb-4"></i>
+        <div class="card-hover bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-7 text-center">
+          <i class="ph ph-cpu text-gold-400 text-3xl sm:text-4xl mb-3 sm:mb-4"></i>
           <h3 class="font-bold text-white mb-2">Tecnologia digital</h3>
           <p class="text-white/55 text-sm leading-relaxed">Fluxo digital completo: de ficheiros STL à fresagem final. Compatível com qualquer scanner.</p>
         </div>
@@ -378,23 +372,23 @@
 
 
   <!-- ===== CONTACTO ===== -->
-  <section class="py-24 px-6 bg-gray-50" id="contacto">
+  <section class="py-16 md:py-24 px-5 sm:px-6 bg-gray-50" id="contacto">
     <div class="max-w-5xl mx-auto">
 
-      <div class="mb-14 text-center">
-        <p class="text-sm font-semibold text-navy-600 uppercase tracking-widest mb-3">Fala connosco</p>
-        <h2 class="text-3xl md:text-4xl font-extrabold text-navy-900 mb-4">Pede um orçamento</h2>
-        <div class="section-divider mx-auto mb-6"></div>
-        <p class="text-gray-500 max-w-xl mx-auto">Entra em contacto connosco para discutir os teus casos, pedires um orçamento ou esclarecer qualquer dúvida. Respondemos em menos de 24 horas.</p>
+      <div class="mb-10 md:mb-14 text-center">
+        <p class="text-xs sm:text-sm font-semibold text-navy-600 uppercase tracking-widest mb-3">Fala connosco</p>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-navy-900 mb-4">Pede um orçamento</h2>
+        <div class="section-divider mx-auto mb-5 sm:mb-6"></div>
+        <p class="text-gray-500 max-w-xl mx-auto text-sm sm:text-base">Entra em contacto connosco para discutir os teus casos, pedires um orçamento ou esclarecer qualquer dúvida. Respondemos em menos de 24 horas.</p>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-10">
+      <div class="grid md:grid-cols-2 gap-8 md:gap-10">
 
         <!-- Contact info -->
-        <div class="space-y-6">
+        <div class="space-y-5 sm:space-y-6">
           <div class="flex items-start gap-4">
-            <div class="w-11 h-11 bg-navy-100 rounded-xl flex items-center justify-center flex-shrink-0">
-              <i class="ph ph-envelope text-navy-700 text-xl"></i>
+            <div class="w-10 h-10 sm:w-11 sm:h-11 bg-navy-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <i class="ph ph-envelope text-navy-700 text-lg sm:text-xl"></i>
             </div>
             <div>
               <p class="text-sm font-semibold text-navy-900 mb-0.5">Email</p>
@@ -403,8 +397,8 @@
           </div>
 
           <div class="flex items-start gap-4">
-            <div class="w-11 h-11 bg-navy-100 rounded-xl flex items-center justify-center flex-shrink-0">
-              <i class="ph ph-phone text-navy-700 text-xl"></i>
+            <div class="w-10 h-10 sm:w-11 sm:h-11 bg-navy-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <i class="ph ph-phone text-navy-700 text-lg sm:text-xl"></i>
             </div>
             <div>
               <p class="text-sm font-semibold text-navy-900 mb-0.5">Telefone</p>
@@ -413,8 +407,8 @@
           </div>
 
           <div class="flex items-start gap-4">
-            <div class="w-11 h-11 bg-navy-100 rounded-xl flex items-center justify-center flex-shrink-0">
-              <i class="ph ph-map-pin text-navy-700 text-xl"></i>
+            <div class="w-10 h-10 sm:w-11 sm:h-11 bg-navy-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <i class="ph ph-map-pin text-navy-700 text-lg sm:text-xl"></i>
             </div>
             <div>
               <p class="text-sm font-semibold text-navy-900 mb-0.5">Morada</p>
@@ -423,8 +417,8 @@
           </div>
 
           <div class="flex items-start gap-4">
-            <div class="w-11 h-11 bg-navy-100 rounded-xl flex items-center justify-center flex-shrink-0">
-              <i class="ph ph-clock text-navy-700 text-xl"></i>
+            <div class="w-10 h-10 sm:w-11 sm:h-11 bg-navy-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <i class="ph ph-clock text-navy-700 text-lg sm:text-xl"></i>
             </div>
             <div>
               <p class="text-sm font-semibold text-navy-900 mb-0.5">Horário</p>
@@ -434,8 +428,8 @@
         </div>
 
         <!-- Form -->
-        <form id="contact-form" class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 space-y-5">
-          <div class="grid sm:grid-cols-2 gap-4">
+        <form id="contact-form" class="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 sm:p-8 space-y-4 sm:space-y-5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-1.5">Nome</label>
               <input type="text" placeholder="Dr. Ana Silva" required
@@ -492,18 +486,18 @@
 
 
   <!-- ===== FOOTER ===== -->
-  <footer class="bg-navy-950 text-white py-10 px-6">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+  <footer class="bg-navy-950 text-white py-8 sm:py-10 px-5 sm:px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 sm:gap-6 text-center md:text-left">
       <div class="flex items-center gap-3">
         <div class="w-8 h-8 bg-navy-700 rounded-lg flex items-center justify-center">
           <i class="ph ph-tooth text-white text-base"></i>
         </div>
         <span class="font-bold text-white">Lab<span class="text-gold-400">mat</span></span>
       </div>
-      <p class="text-sm text-white/40 text-center">
+      <p class="text-xs sm:text-sm text-white/40">
         &copy; 2025 Labmat — Laboratório de Próteses Dentárias. Todos os direitos reservados.
       </p>
-      <a href="mailto:geral@labmat.pt" class="text-sm text-white/50 hover:text-gold-400 transition">
+      <a href="mailto:geral@labmat.pt" class="text-xs sm:text-sm text-white/50 hover:text-gold-400 transition">
         geral@labmat.pt
       </a>
     </div>
@@ -512,7 +506,7 @@
 
   <!-- Back to top -->
   <button id="backToTop"
-    class="hidden fixed bottom-6 right-6 bg-navy-800 hover:bg-navy-700 text-white p-3 rounded-full shadow-lg transition z-50"
+    class="hidden fixed bottom-5 right-5 bg-navy-800 hover:bg-navy-700 text-white p-3 rounded-full shadow-lg transition z-50"
     aria-label="Voltar ao topo">
     <i class="ph ph-arrow-up text-lg"></i>
   </button>
