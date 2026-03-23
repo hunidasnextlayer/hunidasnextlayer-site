@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Laboratório Aleixo Teixeira — Laboratório de Próteses Dentárias em Vila Franca das Naves, Trancoso. Especialistas em coroas, pontes, implantes e próteses removíveis. Parceiros de confiança dos dentistas." />
+  <meta name="keywords" content="laboratório dentário, próteses dentárias, implantes dentários, coroas, pontes, zircónia, CAD/CAM, laboratório dentário Portugal, aleixo teixeira, laboratório aleixo teixeira, laboratório dentário trancoso, laboratório dentário guarda, vila franca das naves, prótese dentária beira interior" />
+  <meta name="author" content="Laboratório Aleixo Teixeira" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="Portuguese" />
+
+  <title>Laboratório Aleixo Teixeira | Laboratório de Próteses Dentárias</title>
+  <link rel="canonical" href="https://aleixoteixeira.pt/" />
+  <meta property="og:locale" content="pt_PT" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Laboratório Aleixo Teixeira | Laboratório de Próteses Dentárias" />
+  <meta property="og:description" content="Qualidade, precisão e rigor ao serviço dos dentistas. Coroas, pontes, implantes e próteses removíveis." />
+  <meta property="og:url" content="https://aleixoteixeira.pt" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              50:  '#f5f5f5',
+              100: '#e5e5e5',
+              200: '#d4d4d4',
+              600: '#404040',
+              700: '#262626',
+              800: '#171717',
+              900: '#0f0f0f',
+              950: '#0a0a0a',
+            },
+            gold: {
+              400: '#ffffff',
+              500: '#e5e5e5',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+
+    .hero-bg {
+      background:
+        linear-gradient(135deg, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.60) 50%, rgba(0,0,0,0.55) 100%),
+        radial-gradient(circle at 1px 1px, rgba(255,255,255,0.04) 1px, transparent 0),
+        url('https://aleixoteixeira.pt/img/photo-1588776814546-1ffcf47267a5.jpg') center/cover no-repeat;
+      background-size: auto, 32px 32px, cover;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in-up {
+      animation: fadeInUp 0.7s ease both;
+    }
+    .delay-100 { animation-delay: 0.1s; }
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-300 { animation-delay: 0.3s; }
+    .delay-400 { animation-delay: 0.4s; }
+
+    .section-divider {
+      width: 48px;
+      height: 3px;
+      background: #0a0a0a;
+      border-radius: 2px;
+    }
+
+    .card-hover {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    @media (hover: hover) {
+      .card-hover:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.10);
+      }
+    }
+  </style>
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "MedicalOrganization"],
+    "name": "Aleixo Teixeira, Unipessoal Lda",
+    "alternateName": "Laboratório Aleixo Teixeira",
+    "description": "Laboratório de próteses dentárias especializado em coroas, pontes, próteses sobre implante, próteses removíveis, facetas e tecnologia CAD/CAM.",
+    "url": "https://aleixoteixeira.pt",
+    "email": "geral@aleixoteixeira.pt",
+    "vatID": "PT516618555",
+    "legalName": "Aleixo Teixeira, Unipessoal Lda",
+    "foundingDate": "2021-10-01",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua dos Moinhos, Nr. 2",
+      "postalCode": "6420-748",
+      "addressLocality": "Vila Franca das Naves",
+      "addressRegion": "Guarda",
+      "addressCountry": "PT"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "addressCountry": "PT"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ],
+    "sameAs": [
+      "https://aleixoteixeira.pt"
+    ],
+    "medicalSpecialty": "Dentistry",
+    "serviceArea": {
+      "@type": "AdministrativeArea",
+      "name": "Portugal"
+    }
+  }
+  </script>
+</head>
+
+<body class="bg-white text-gray-800 font-sans antialiased">
+
+  <!-- ===== HEADER ===== -->
+  <header class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
+
+      <!-- Logo -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <!-- AT monogram -->
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="36" height="36" fill="#0a0a0a"/>
+          <!-- A -->
+          <polygon points="5,26 9,14 11,14 15,26 13,26 11.5,21 8.5,21 7,26" fill="white"/>
+          <rect x="9.2" y="19" width="3.6" height="1.5" fill="#0a0a0a"/>
+          <!-- T -->
+          <rect x="18" y="14" width="8" height="2" fill="white"/>
+          <rect x="21" y="16" width="2" height="10" fill="white"/>
+        </svg>
+        <span class="leading-tight">
+          <span class="block text-sm font-bold text-gray-900 tracking-[0.12em] uppercase">Aleixo Teixeira</span>
+          <span class="block text-[10px] text-gray-400 font-normal tracking-widest uppercase">Laboratório de Prótese Dentária</span>
+        </span>
+      </a>
+
+      <!-- Menu toggle (mobile) -->
+      <button id="menu-toggle" class="sm:hidden text-gray-900 focus:outline-none p-1" aria-label="Abrir menu">
+        <i class="ph ph-list text-2xl"></i>
+      </button>
+
+      <!-- Nav -->
+      <nav id="nav-menu" class="hidden flex-col gap-2 absolute top-full left-0 w-full bg-white shadow-md px-6 py-4 sm:static sm:flex sm:flex-row sm:gap-8 sm:shadow-none sm:p-0 sm:w-auto">
+        <a href="#servicos"  class="text-sm font-medium text-gray-600 hover:text-navy-700 transition py-2 sm:py-0">Serviços</a>
+        <a href="#sobre"     class="text-sm font-medium text-gray-600 hover:text-navy-700 transition py-2 sm:py-0">Sobre</a>
+        <a href="#galeria"   class="text-sm font-medium text-gray-600 hover:text-navy-700 transition py-2 sm:py-0">Galeria</a>
+        <a href="#vantagens" class="text-sm font-medium text-gray-600 hover:text-navy-700 transition py-2 sm:py-0">Porquê Nós</a>
+        <a href="#contacto"  class="text-sm font-medium bg-navy-800 hover:bg-navy-700 text-white px-4 py-2 rounded-lg transition text-center">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu    = document.getElementById('nav-menu');
+    menuToggle.addEventListener('click', () => navMenu.classList.toggle('hidden'));
+    document.querySelectorAll('#nav-menu a').forEach(link =>
+      link.addEventListener('click', () => {
+        if (window.innerWidth < 640) navMenu.classList.add('hidden');
+      })
+    );
+    document.addEventListener('click', e => {
+      if (!navMenu.contains(e.target) && !menuToggle.contains(e.target) && window.innerWidth < 640) {
+        navMenu.classList.add('hidden');
+      }
+    });
+  </script>
+
+
+  <!-- ===== HERO ===== -->
+  <section class="hero-bg min-h-screen flex items-center justify-center text-center px-5 pt-16" id="hero">
+    <div class="max-w-3xl mx-auto py-14 sm:py-20">
+      <span class="inline-block bg-white/10 text-white/80 text-xs sm:text-sm font-medium px-4 py-1.5 rounded-full mb-5 animate-fade-in-up">
+        Laboratório de Próteses Dentárias
+      </span>
+      <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white leading-tight mb-5 animate-fade-in-up delay-100">
+        O laboratório em que<br/>
+        <span class="text-white/70">os dentistas confiam.</span>
+      </h1>
+      <p class="text-base sm:text-lg md:text-xl text-white/75 mb-8 leading-relaxed animate-fade-in-up delay-200">
+        Trabalhamos lado a lado com dentistas para produzir próteses, implantes e trabalhos de cerâmica com rigor, qualidade e dentro do prazo.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 animate-fade-in-up delay-300">
+        <a href="#contacto"
+           class="bg-white hover:bg-gray-100 text-gray-950 font-semibold px-8 py-3.5 rounded-full transition shadow-lg text-center tracking-wide uppercase text-sm">
+          Pede um orçamento
+        </a>
+        <a href="#servicos"
+           class="bg-transparent hover:bg-white/10 border border-white/50 text-white font-medium px-8 py-3.5 rounded-full transition text-center tracking-wide uppercase text-sm">
+          Ver serviços
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== STATS BAR ===== -->
+  <section class="bg-navy-950 text-white py-8 md:py-10 px-6">
+    <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center">
+      <div>
+        <p class="text-2xl sm:text-3xl font-extrabold text-gold-400">+15</p>
+        <p class="text-xs sm:text-sm text-white/60 mt-1">Anos de experiência</p>
+      </div>
+      <div>
+        <p class="text-2xl sm:text-3xl font-extrabold text-gold-400">+200</p>
+        <p class="text-xs sm:text-sm text-white/60 mt-1">Dentistas parceiros</p>
+      </div>
+      <div>
+        <p class="text-2xl sm:text-3xl font-extrabold text-gold-400">98%</p>
+        <p class="text-xs sm:text-sm text-white/60 mt-1">Taxa de satisfação</p>
+      </div>
+      <div>
+        <p class="text-2xl sm:text-3xl font-extrabold text-gold-400">48h</p>
+        <p class="text-xs sm:text-sm text-white/60 mt-1">Prazo de entrega médio</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== SERVIÇOS ===== -->
+  <section class="py-16 md:py-24 px-5 sm:px-6 bg-gray-50" id="servicos">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-10 md:mb-14 text-center">
+        <p class="text-xs sm:text-sm font-semibold text-navy-600 uppercase tracking-widest mb-3">O que fazemos</p>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-navy-900 mb-4">Serviços de laboratório</h2>
+        <div class="section-divider mx-auto"></div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+
+        <div class="card-hover bg-white rounded-2xl p-5 sm:p-7 border border-gray-100 shadow-sm">
+          <div class="w-11 h-11 sm:w-12 sm:h-12 bg-navy-50 rounded-xl flex items-center justify-center mb-4 sm:mb-5">
+            <i class="ph ph-crown-simple text-navy-700 text-xl sm:text-2xl"></i>
+          </div>
+          <h3 class="text-base sm:text-lg font-bold text-navy-900 mb-2">Coroas e Pontes</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Coroas individuais e pontes fixas em zircónia, metal-cerâmica, disilicato de lítio e resina. Estética e durabilidade garantidas.</p>
+        </div>
+
+        <div class="card-hover bg-white rounded-2xl p-5 sm:p-7 border border-gray-100 shadow-sm">
+          <div class="w-11 h-11 sm:w-12 sm:h-12 bg-navy-50 rounded-xl flex items-center justify-center mb-4 sm:mb-5">
+            <i class="ph ph-wrench text-navy-700 text-xl sm:text-2xl"></i>
+          </div>
+          <h3 class="text-base sm:text-lg font-bold text-navy-900 mb-2">Próteses sobre Implante</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Coroas unitárias, barras, próteses híbridas e overdentures. Compatíveis com os principais sistemas de implantes do mercado.</p>
+        </div>
+
+        <div class="card-hover bg-white rounded-2xl p-5 sm:p-7 border border-gray-100 shadow-sm">
+          <div class="w-11 h-11 sm:w-12 sm:h-12 bg-navy-50 rounded-xl flex items-center justify-center mb-4 sm:mb-5">
+            <i class="ph ph-squares-four text-navy-700 text-xl sm:text-2xl"></i>
+          </div>
+          <h3 class="text-base sm:text-lg font-bold text-navy-900 mb-2">Próteses Removíveis</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Próteses totais e parciais acrílicas ou em esqueleto metálico. Conforto e funcionalidade para cada paciente.</p>
+        </div>
+
+        <div class="card-hover bg-white rounded-2xl p-5 sm:p-7 border border-gray-100 shadow-sm">
+          <div class="w-11 h-11 sm:w-12 sm:h-12 bg-navy-50 rounded-xl flex items-center justify-center mb-4 sm:mb-5">
+            <i class="ph ph-sparkle text-navy-700 text-xl sm:text-2xl"></i>
+          </div>
+          <h3 class="text-base sm:text-lg font-bold text-navy-900 mb-2">Facetas e Estética</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Facetas em cerâmica e disilicato de lítio para reabilitações estéticas exigentes. Reprodução fiel da cor e translucidez natural.</p>
+        </div>
+
+        <div class="card-hover bg-white rounded-2xl p-5 sm:p-7 border border-gray-100 shadow-sm">
+          <div class="w-11 h-11 sm:w-12 sm:h-12 bg-navy-50 rounded-xl flex items-center justify-center mb-4 sm:mb-5">
+            <i class="ph ph-scan text-navy-700 text-xl sm:text-2xl"></i>
+          </div>
+          <h3 class="text-base sm:text-lg font-bold text-navy-900 mb-2">Tecnologia CAD/CAM</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Fresagem digital de alta precisão em zircónia e PMMA. Compatível com ficheiros STL de qualquer scanner intraoral.</p>
+        </div>
+
+        <div class="card-hover bg-white rounded-2xl p-5 sm:p-7 border border-gray-100 shadow-sm">
+          <div class="w-11 h-11 sm:w-12 sm:h-12 bg-navy-50 rounded-xl flex items-center justify-center mb-4 sm:mb-5">
+            <i class="ph ph-shield-check text-navy-700 text-xl sm:text-2xl"></i>
+          </div>
+          <h3 class="text-base sm:text-lg font-bold text-navy-900 mb-2">Aparelhos e Contenção</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Goteiras oclusais, aparelhos de contenção, férias e outros trabalhos complementares para o consultório.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== SOBRE ===== -->
+  <section class="py-16 md:py-24 px-5 sm:px-6 bg-white" id="sobre">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+
+      <!-- Photo -->
+      <div class="relative mx-auto w-full max-w-xs sm:max-w-sm">
+        <img
+          src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=800&q=80"
+          alt="Técnico de laboratório dentário a trabalhar"
+          class="rounded-3xl w-full object-cover aspect-square shadow-lg"
+        />
+        <!-- Floating badge -->
+        <div class="absolute -bottom-4 right-2 sm:-right-4 bg-white rounded-2xl shadow-xl px-4 py-3 sm:px-5 sm:py-4 flex items-center gap-3 border border-gray-100">
+          <i class="ph ph-check-circle text-green-500 text-xl sm:text-2xl"></i>
+          <div>
+            <p class="text-xs text-gray-400 leading-none">Certificado</p>
+            <p class="text-sm font-bold text-navy-900">ISO 13485</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="mt-8 md:mt-0">
+        <p class="text-xs sm:text-sm font-semibold text-navy-600 uppercase tracking-widest mb-3">Sobre o Laboratório</p>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-navy-900 mb-5 leading-tight">
+          Um laboratório ao serviço dos dentistas
+        </h2>
+        <div class="section-divider mb-6 sm:mb-7"></div>
+        <p class="text-gray-500 leading-relaxed mb-5 text-sm sm:text-base">
+          O Laboratório Aleixo Teixeira é um laboratório de próteses dentárias especializado em dar resposta rápida e de qualidade às necessidades dos dentistas. Trabalhamos com materiais de última geração e tecnologia digital para garantir que cada trabalho chega ao consultório pronto a colocar.
+        </p>
+        <p class="text-gray-500 leading-relaxed mb-7 text-sm sm:text-base">
+          A nossa equipa é formada por técnicos experientes com formação contínua, que entendem que o rigor na prótese é tão importante como a clínica. A relação com cada dentista é personalizada, direta e assente na confiança.
+        </p>
+        <ul class="space-y-3">
+          <li class="flex items-center gap-3 text-gray-700 text-sm">
+            <i class="ph ph-check-circle text-navy-600 text-lg sm:text-xl flex-shrink-0"></i>
+            Equipa técnica especializada e em formação contínua
+          </li>
+          <li class="flex items-center gap-3 text-gray-700 text-sm">
+            <i class="ph ph-check-circle text-navy-600 text-lg sm:text-xl flex-shrink-0"></i>
+            Materiais certificados e de origem rastreável
+          </li>
+          <li class="flex items-center gap-3 text-gray-700 text-sm">
+            <i class="ph ph-check-circle text-navy-600 text-lg sm:text-xl flex-shrink-0"></i>
+            Comunicação direta entre técnico e dentista
+          </li>
+          <li class="flex items-center gap-3 text-gray-700 text-sm">
+            <i class="ph ph-check-circle text-navy-600 text-lg sm:text-xl flex-shrink-0"></i>
+            Prazos de entrega cumpridos e previsíveis
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===== GALERIA ===== -->
+  <section class="py-16 md:py-24 px-5 sm:px-6 bg-gray-50" id="galeria">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-10 md:mb-14 text-center">
+        <p class="text-xs sm:text-sm font-semibold text-navy-600 uppercase tracking-widest mb-3">O nosso trabalho</p>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-navy-900 mb-4">Galeria</h2>
+        <div class="section-divider mx-auto"></div>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+
+        <div class="relative overflow-hidden rounded-2xl group aspect-square">
+          <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=600&q=80"
+            alt="Coroas em zircónia" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+            <span class="text-white text-sm font-semibold">Coroas em Zircónia</span>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded-2xl group aspect-square">
+          <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80"
+            alt="Trabalho de cerâmica" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+            <span class="text-white text-sm font-semibold">Trabalhos de Cerâmica</span>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded-2xl group aspect-square">
+          <img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=600&q=80"
+            alt="Tecnologia CAD/CAM" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+            <span class="text-white text-sm font-semibold">Tecnologia CAD/CAM</span>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded-2xl group aspect-square">
+          <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=600&q=80"
+            alt="Próteses sobre implante" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+            <span class="text-white text-sm font-semibold">Próteses sobre Implante</span>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded-2xl group aspect-square">
+          <img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322?auto=format&fit=crop&w=600&q=80"
+            alt="Facetas de cerâmica" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+            <span class="text-white text-sm font-semibold">Facetas de Cerâmica</span>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded-2xl group aspect-square">
+          <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80"
+            alt="Equipamento de laboratório" class="w-full h-full object-cover transition duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+            <span class="text-white text-sm font-semibold">Equipamento de Laboratório</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== VANTAGENS ===== -->
+  <section class="py-16 md:py-24 px-5 sm:px-6 bg-navy-950 text-white" id="vantagens">
+    <div class="max-w-6xl mx-auto">
+
+      <div class="mb-10 md:mb-14 text-center">
+        <p class="text-xs sm:text-sm font-semibold text-gold-400 uppercase tracking-widest mb-3">Porquê Aleixo Teixeira</p>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-4">O que nos distingue</h2>
+        <div class="section-divider mx-auto"></div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+
+        <div class="card-hover bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-7 text-center">
+          <i class="ph ph-clock text-gold-400 text-3xl sm:text-4xl mb-3 sm:mb-4"></i>
+          <h3 class="font-bold text-white mb-2">Entrega rápida</h3>
+          <p class="text-white/55 text-sm leading-relaxed">Prazo médio de 48 horas nos trabalhos standard. Urgências tratadas com prioridade.</p>
+        </div>
+
+        <div class="card-hover bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-7 text-center">
+          <i class="ph ph-magnifying-glass text-gold-400 text-3xl sm:text-4xl mb-3 sm:mb-4"></i>
+          <h3 class="font-bold text-white mb-2">Controlo de qualidade</h3>
+          <p class="text-white/55 text-sm leading-relaxed">Cada trabalho passa por verificação rigorosa antes de sair do laboratório.</p>
+        </div>
+
+        <div class="card-hover bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-7 text-center">
+          <i class="ph ph-chat-circle-text text-gold-400 text-3xl sm:text-4xl mb-3 sm:mb-4"></i>
+          <h3 class="font-bold text-white mb-2">Suporte dedicado</h3>
+          <p class="text-white/55 text-sm leading-relaxed">Linha direta com o técnico responsável. Sem intermediários, sem ruído na comunicação.</p>
+        </div>
+
+        <div class="card-hover bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-7 text-center">
+          <i class="ph ph-cpu text-gold-400 text-3xl sm:text-4xl mb-3 sm:mb-4"></i>
+          <h3 class="font-bold text-white mb-2">Tecnologia digital</h3>
+          <p class="text-white/55 text-sm leading-relaxed">Fluxo digital completo: de ficheiros STL à fresagem final. Compatível com qualquer scanner.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="py-16 md:py-24 px-5 sm:px-6 bg-gray-50" id="contacto">
+    <div class="max-w-5xl mx-auto">
+
+      <div class="mb-10 md:mb-14 text-center">
+        <p class="text-xs sm:text-sm font-semibold text-navy-600 uppercase tracking-widest mb-3">Fala connosco</p>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-navy-900 mb-4">Pede um orçamento</h2>
+        <div class="section-divider mx-auto mb-5 sm:mb-6"></div>
+        <p class="text-gray-500 max-w-xl mx-auto text-sm sm:text-base">Entra em contacto connosco para discutir os teus casos, pedires um orçamento ou esclarecer qualquer dúvida. Respondemos em menos de 24 horas.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 md:gap-10">
+
+        <!-- Contact info -->
+        <div class="space-y-5 sm:space-y-6">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 sm:w-11 sm:h-11 bg-navy-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <i class="ph ph-envelope text-navy-700 text-lg sm:text-xl"></i>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-navy-900 mb-0.5">Email</p>
+              <a href="mailto:geral@aleixoteixeira.pt" class="text-gray-500 hover:text-navy-700 transition text-sm">geral@aleixoteixeira.pt</a>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 sm:w-11 sm:h-11 bg-navy-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <i class="ph ph-phone text-navy-700 text-lg sm:text-xl"></i>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-navy-900 mb-0.5">Telefone</p>
+              <a href="tel:+351000000000" class="text-gray-500 hover:text-navy-700 transition text-sm">+351 000 000 000</a>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 sm:w-11 sm:h-11 bg-navy-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <i class="ph ph-map-pin text-navy-700 text-lg sm:text-xl"></i>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-navy-900 mb-0.5">Morada</p>
+              <p class="text-gray-500 text-sm">Rua dos Moinhos, Nr. 2<br/>6420-748 Vila Franca das Naves<br/>Trancoso, Guarda</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 sm:w-11 sm:h-11 bg-navy-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <i class="ph ph-clock text-navy-700 text-lg sm:text-xl"></i>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-navy-900 mb-0.5">Horário</p>
+              <p class="text-gray-500 text-sm">Segunda a Sexta — 8h00 às 18h00</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form id="contact-form" class="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 sm:p-8 space-y-4 sm:space-y-5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1.5">Nome</label>
+              <input type="text" placeholder="Dr. Ana Silva" required
+                class="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-navy-600 focus:border-transparent transition" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1.5">Clínica / Consultório</label>
+              <input type="text" placeholder="Clínica Dental Exemplo"
+                class="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-navy-600 focus:border-transparent transition" />
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1.5">Email</label>
+            <input type="email" placeholder="email@clinica.pt" required
+              class="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-navy-600 focus:border-transparent transition" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1.5">Tipo de trabalho</label>
+            <select class="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-navy-600 focus:border-transparent transition bg-white">
+              <option value="">Seleciona uma opção</option>
+              <option>Coroa / Ponte</option>
+              <option>Prótese sobre Implante</option>
+              <option>Prótese Removível</option>
+              <option>Faceta</option>
+              <option>CAD/CAM</option>
+              <option>Outro</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1.5">Mensagem</label>
+            <textarea rows="4" placeholder="Descreve o trabalho ou a tua dúvida..."
+              class="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-navy-600 focus:border-transparent transition resize-none"></textarea>
+          </div>
+          <button type="submit"
+            class="w-full bg-navy-800 hover:bg-navy-700 text-white font-semibold py-3 rounded-lg transition text-sm">
+            Enviar mensagem
+          </button>
+          <p id="form-success" class="hidden text-green-600 text-sm text-center font-medium pt-1">
+            <i class="ph ph-check-circle"></i> Mensagem enviada! Entraremos em contacto em breve.
+          </p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('form-success').classList.remove('hidden');
+      this.reset();
+    });
+  </script>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-navy-950 text-white py-8 sm:py-10 px-5 sm:px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 sm:gap-6 text-center md:text-left">
+      <div class="flex items-center gap-3">
+        <svg width="28" height="28" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="36" height="36" fill="white" fill-opacity="0.08"/>
+          <polygon points="5,26 9,14 11,14 15,26 13,26 11.5,21 8.5,21 7,26" fill="white"/>
+          <rect x="9.2" y="19" width="3.6" height="1.5" fill="#0a0a0a"/>
+          <rect x="18" y="14" width="8" height="2" fill="white"/>
+          <rect x="21" y="16" width="2" height="10" fill="white"/>
+        </svg>
+        <span class="leading-tight">
+          <span class="block text-xs font-bold text-white tracking-[0.12em] uppercase">Aleixo Teixeira</span>
+          <span class="block text-[9px] text-white/40 font-normal tracking-widest uppercase">Laboratório de Prótese Dentária</span>
+        </span>
+      </div>
+      <p class="text-xs sm:text-sm text-white/40">
+        &copy; 2026 Aleixo Teixeira, Unipessoal Lda &middot; NIF 516618555<br/>
+        Laboratório de Próteses Dentárias. Todos os direitos reservados.
+      </p>
+      <a href="mailto:geral@aleixoteixeira.pt" class="text-xs sm:text-sm text-white/50 hover:text-white transition">
+        geral@aleixoteixeira.pt
+      </a>
+    </div>
+  </footer>
+
+
+  <!-- Back to top -->
+  <button id="backToTop"
+    class="hidden fixed bottom-5 right-5 bg-gray-900 hover:bg-gray-800 text-white p-3 rounded-full shadow-lg transition z-50"
+    aria-label="Voltar ao topo">
+    <i class="ph ph-arrow-up text-lg"></i>
+  </button>
+
+  <script>
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      backToTop.classList.toggle('hidden', window.scrollY <= 300);
+    });
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
+
+</body>
+</html>
