@@ -43,18 +43,18 @@
         extend: {
           colors: {
             navy: {
-              50:  '#f0f4f9',
-              100: '#dce6f1',
-              200: '#b8cce3',
-              600: '#2563a8',
-              700: '#1a4f8a',
-              800: '#123d6e',
-              900: '#0c2d52',
-              950: '#071a30',
+              50:  '#f5f5f5',
+              100: '#e5e5e5',
+              200: '#d4d4d4',
+              600: '#404040',
+              700: '#262626',
+              800: '#171717',
+              900: '#0f0f0f',
+              950: '#0a0a0a',
             },
             gold: {
-              400: '#e8c547',
-              500: '#d4a017',
+              400: '#ffffff',
+              500: '#e5e5e5',
             }
           },
           fontFamily: {
@@ -70,8 +70,8 @@
 
     .hero-bg {
       background:
-        linear-gradient(135deg, rgba(12, 45, 82, 0.60) 0%, rgba(26, 79, 138, 0.50) 50%, rgba(37, 99, 168, 0.45) 100%),
-        radial-gradient(circle at 1px 1px, rgba(255,255,255,0.06) 1px, transparent 0),
+        linear-gradient(135deg, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.60) 50%, rgba(0,0,0,0.55) 100%),
+        radial-gradient(circle at 1px 1px, rgba(255,255,255,0.04) 1px, transparent 0),
         url('https://labmat.pt/img/photo-1588776814546-1ffcf47267a5.jpg') center/cover no-repeat;
       background-size: auto, 32px 32px, cover;
     }
@@ -90,8 +90,8 @@
 
     .section-divider {
       width: 48px;
-      height: 4px;
-      background: linear-gradient(90deg, #2563a8, #e8c547);
+      height: 3px;
+      background: #0a0a0a;
       border-radius: 2px;
     }
 
@@ -101,7 +101,7 @@
     @media (hover: hover) {
       .card-hover:hover {
         transform: translateY(-4px);
-        box-shadow: 0 16px 40px rgba(12, 45, 82, 0.12);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.10);
       }
     }
   </style>
@@ -114,18 +114,25 @@
     <div class="max-w-6xl mx-auto px-4 py-3 sm:py-4 flex justify-between items-center">
 
       <!-- Logo -->
-      <div class="flex items-center gap-2 sm:gap-3">
-        <div class="w-8 h-8 sm:w-9 sm:h-9 bg-navy-800 rounded-lg flex items-center justify-center">
-          <i class="ph ph-tooth text-white text-lg sm:text-xl"></i>
-        </div>
-        <span class="text-base sm:text-lg font-bold text-navy-900 tracking-tight leading-tight">
-          Aleixo <span class="text-navy-600">Teixeira</span>
-          <span class="block text-xs text-gray-400 font-normal tracking-normal">Laboratório Dentário</span>
+      <a href="#hero" class="flex items-center gap-3 group">
+        <!-- AT monogram -->
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="36" height="36" fill="#0a0a0a"/>
+          <!-- A -->
+          <polygon points="5,26 9,14 11,14 15,26 13,26 11.5,21 8.5,21 7,26" fill="white"/>
+          <rect x="9.2" y="19" width="3.6" height="1.5" fill="#0a0a0a"/>
+          <!-- T -->
+          <rect x="18" y="14" width="8" height="2" fill="white"/>
+          <rect x="21" y="16" width="2" height="10" fill="white"/>
+        </svg>
+        <span class="leading-tight">
+          <span class="block text-sm font-bold text-gray-900 tracking-[0.12em] uppercase">Aleixo Teixeira</span>
+          <span class="block text-[10px] text-gray-400 font-normal tracking-widest uppercase">Laboratório de Prótese Dentária</span>
         </span>
-      </div>
+      </a>
 
       <!-- Menu toggle (mobile) -->
-      <button id="menu-toggle" class="sm:hidden text-navy-800 focus:outline-none p-1" aria-label="Abrir menu">
+      <button id="menu-toggle" class="sm:hidden text-gray-900 focus:outline-none p-1" aria-label="Abrir menu">
         <i class="ph ph-list text-2xl"></i>
       </button>
 
@@ -165,18 +172,18 @@
       </span>
       <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white leading-tight mb-5 animate-fade-in-up delay-100">
         O laboratório em que<br/>
-        <span class="text-gold-400">os dentistas confiam.</span>
+        <span class="text-white/70">os dentistas confiam.</span>
       </h1>
       <p class="text-base sm:text-lg md:text-xl text-white/75 mb-8 leading-relaxed animate-fade-in-up delay-200">
         Trabalhamos lado a lado com dentistas para produzir próteses, implantes e trabalhos de cerâmica com rigor, qualidade e dentro do prazo.
       </p>
       <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 animate-fade-in-up delay-300">
         <a href="#contacto"
-           class="bg-gold-400 hover:bg-gold-500 text-navy-950 font-semibold px-8 py-3.5 rounded-full transition shadow-lg text-center">
+           class="bg-white hover:bg-gray-100 text-gray-950 font-semibold px-8 py-3.5 rounded-full transition shadow-lg text-center tracking-wide uppercase text-sm">
           Pede um orçamento
         </a>
         <a href="#servicos"
-           class="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-medium px-8 py-3.5 rounded-full transition text-center">
+           class="bg-transparent hover:bg-white/10 border border-white/50 text-white font-medium px-8 py-3.5 rounded-full transition text-center tracking-wide uppercase text-sm">
           Ver serviços
         </a>
       </div>
@@ -551,15 +558,22 @@
   <footer class="bg-navy-950 text-white py-8 sm:py-10 px-5 sm:px-6">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 sm:gap-6 text-center md:text-left">
       <div class="flex items-center gap-3">
-        <div class="w-8 h-8 bg-navy-700 rounded-lg flex items-center justify-center">
-          <i class="ph ph-tooth text-white text-base"></i>
-        </div>
-        <span class="font-bold text-white">Lab<span class="text-gold-400">mat</span></span>
+        <svg width="28" height="28" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="36" height="36" fill="white" fill-opacity="0.08"/>
+          <polygon points="5,26 9,14 11,14 15,26 13,26 11.5,21 8.5,21 7,26" fill="white"/>
+          <rect x="9.2" y="19" width="3.6" height="1.5" fill="#0a0a0a"/>
+          <rect x="18" y="14" width="8" height="2" fill="white"/>
+          <rect x="21" y="16" width="2" height="10" fill="white"/>
+        </svg>
+        <span class="leading-tight">
+          <span class="block text-xs font-bold text-white tracking-[0.12em] uppercase">Aleixo Teixeira</span>
+          <span class="block text-[9px] text-white/40 font-normal tracking-widest uppercase">Laboratório de Prótese Dentária</span>
+        </span>
       </div>
       <p class="text-xs sm:text-sm text-white/40">
         &copy; 2025 Laboratório Aleixo Teixeira — Laboratório de Próteses Dentárias. Todos os direitos reservados.
       </p>
-      <a href="mailto:geral@labmat.pt" class="text-xs sm:text-sm text-white/50 hover:text-gold-400 transition">
+      <a href="mailto:geral@labmat.pt" class="text-xs sm:text-sm text-white/50 hover:text-white transition">
         geral@labmat.pt
       </a>
     </div>
@@ -568,7 +582,7 @@
 
   <!-- Back to top -->
   <button id="backToTop"
-    class="hidden fixed bottom-5 right-5 bg-navy-800 hover:bg-navy-700 text-white p-3 rounded-full shadow-lg transition z-50"
+    class="hidden fixed bottom-5 right-5 bg-gray-900 hover:bg-gray-800 text-white p-3 rounded-full shadow-lg transition z-50"
     aria-label="Voltar ao topo">
     <i class="ph ph-arrow-up text-lg"></i>
   </button>
